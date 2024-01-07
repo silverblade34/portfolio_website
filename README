@@ -1,0 +1,41 @@
+# Mi Portafolio
+
+Este es mi proyecto de portafolio personal, donde muestro mis habilidades y proyectos.
+
+## Descripción
+
+El proyecto consiste en un sitio web interactivo donde presento información sobre mí, mis habilidades y proyectos realizados.
+
+## Características
+
+- Diseño responsivo
+- Página de inicio con una breve introducción y enlaces a las secciones principales del sitio
+- Secciones de "Sobre mí", "Habilidades" y "Proyectos" con información detallada
+- Formulario de contacto para que los visitantes puedan ponerse en contacto conmigo
+- Estilo moderno y atractivo
+
+## Capturas de pantalla
+
+![Portafolio](./assets/screenshot.webp "Portafolio")
+
+## Tecnologías utilizadas
+
+- HTML
+- CSS
+- JavaScript
+
+## Instalación
+
+1. Clona este repositorio en tu máquina local.
+2. Abre el archivo `index.html` en tu navegador web.
+
+## Contribución
+
+¡Las contribuciones son bienvenidas! Si tienes alguna idea o mejora para este proyecto, no dudes en enviar una solicitud de extracción.
+
+## Autor
+
+- Nombre: Michell Marcos Pacheco Tacay
+- Sitio web: [Tu Sitio Web]
+- LinkedIn: https://www.linkedin.com/in/marcos-pacheco-tacay-674206249/
+
