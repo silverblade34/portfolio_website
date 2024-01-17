@@ -1,28 +1,3 @@
-document.getElementById('contact-form').addEventListener('submit', function (event) {
-  event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
-
-  // Obtener los valores de los campos del formulario
-  var nombre = document.getElementById('nombre').value;
-  var email = document.getElementById('email').value;
-  var mensaje = document.getElementById('mensaje').value;
-
-  // Construir el mensaje para WhatsApp
-  var mensajeWhatsApp = 'Hola, vengo de tu portafolio web, estoy interesado en tu trabajo \n\n' +
-    'Nombre: ' + nombre + ' \u{1F464}\n' + // Icono de persona
-    'Correo electrónico: ' + email + ' \u{1F4E7}\n' + // Icono de sobre
-    'Mensaje: ' + mensaje; // No se agregan emoticones específicos en este caso
-
-  // Codificar el mensaje para usarlo en la URL
-  var mensajeCodificado = encodeURIComponent(mensajeWhatsApp);
-
-  // Construir la URL de redireccionamiento de WhatsApp con el mensaje
-  var urlWhatsApp = 'https://wa.me/937132403?text=' + mensajeCodificado;
-
-  // Abrir la URL de WhatsApp en una nueva pestaña
-  window.open(urlWhatsApp, '_blank');
-});
-
-
 // -------------------------Obtener los elementos de navegación de mi header-----------------------
 var navItems = document.querySelectorAll('.item a');
 
@@ -56,6 +31,7 @@ var menuToggle = document.querySelector('.menu-toggle');
 var navMenu = document.getElementById('navMenu');
 
 menuToggle.addEventListener('click', function () {
+  console.log("----------------------1")
   menuToggle.classList.toggle('open');
   navMenu.classList.toggle('open');
 });
