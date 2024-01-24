@@ -24,35 +24,3 @@ document.addEventListener('scroll', function () {
   });
 });
 
-
-// ------------------Estilos para navegacion---------------------
-
-var menuToggle = document.querySelector('.menu-toggle');
-var navMenu = document.getElementById('navMenu');
-
-menuToggle.addEventListener('click', function () {
-  console.log("----------------------1")
-  menuToggle.classList.toggle('open');
-  navMenu.classList.toggle('open');
-});
-
-// Agregar evento de clic a cada elemento de navegación
-var navItems = document.querySelectorAll('.item a');
-navItems.forEach(function (item) {
-  item.addEventListener('click', function (event) {
-    event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
-
-    // Obtener el objetivo del enlace (el ID de la sección a la que se desplaza)
-    var target = this.getAttribute('href');
-
-    // Desplazarse a la sección utilizando el desplazamiento suave (smooth scrolling)
-    document.querySelector(target).scrollIntoView({
-      behavior: 'smooth'
-    });
-
-    // Ocultar el header
-    navMenu.classList.remove('open');
-    menuToggle.classList.remove('open');
-  });
-});
-

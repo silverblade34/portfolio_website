@@ -15,21 +15,17 @@
     <!-- Link AOS -->
     <link href="scripts/aos/aos.css" rel="stylesheet">
     <script src="scripts/aos/aos.js"></script>
-
 </head>
 
 <body>
     <header class="flex p-2 px-5 justify-center items-center fixed top-0 left-0 right-0 text-gray-500 w-full">
-        <div class="flex bg-gray-900 text-white px-2 md:px-4 rounded-2xl items-center py-2">
+        <div class="flex bg-gray-900 text-white px-2 md:px-5 rounded-full items-center py-2">
             <div class="logo text-gray-500 font-extrabold pr-3 hidden md:block">
                 <a href="#home" class="flex items-center">
                     <img src="./assets/logo-gato-blanco.svg" class="w-8 mr-2" alt="">
                 </a>
             </div>
-            <nav class="flex gap-1 md:gap-5 font-medium text-xs md:text-base">
-                <div class="item hover:bg-indigo-600 p-1 px-2 rounded-xl hover:text-white transition bg duration-300 ">
-                    <a href="#home">Inicio</a>
-                </div>
+            <nav class="flex gap-1 md:gap-5 font-medium text-xs md:text-sm">
                 <div class="item hover:bg-indigo-600 p-1 px-2 rounded-xl hover:text-white transition bg duration-300 ">
                     <a href="#about">Sobre mí</a>
                 </div>
@@ -69,80 +65,94 @@
             <li></li>
         </ul>
     </div>
-    <main class="flex justify-center overflow-hidden">
-        <div class="container w-[90%] lg:w-[65%]">
-            <section class="banner flex justify-center lg:h-screen items-center lg:mt-0 mt-[6rem]" id="home">
-                <div class="lg:grid gap-4 lg:grid-cols-2 block">
-                    <div class="flex items-center" data-aos="fade-right" data-aos-duration="2000">
-                        <div class="ps-4">
+    <main class="banner flex justify-center overflow-hidden">
+        <div class="container w-[90%] lg:w-[1000px]">
+            <section class="flex justify-center h-screen items-center" id="home">
+                <div class="lg:grid gap-4 lg:grid-cols-6 block">
+                    <div class="flex items-center col-span-4" data-aos="fade-right" data-aos-duration="2000">
+                        <div>
                             <h1 class="text-5xl font-black text-gray-800">Hola, soy Marcos <br> Pacheco
                             </h1>
                             <p class="text-2xl mt-2 font-semibold text-indigo-500 typed-title min-h-[40px]"></p>
-                            <h2 class="mt-3 font-medium text-sm md:text-xl text-gray-800">
+                            <h2 class="mt-3 font-medium text-lg md:text-2xl text-gray-700 text-balance">
                                 <span class="text-yellow-800 dark:text-yellow-500">
                                     Apasionado por la programación.
                                 </span>
-                                Me caracterizo por mi rápida capacidad de aprendizaje y mi gusto por los retos que
-                                impulsan
-                                mi crecimiento profesional.
-                                <span class="text-sky-800 dark:text-sky-500"> ¡Bienvenido a mi portafolio! </span>
+                                Considero que
+                                <span class="text-sky-800 dark:text-sky-500">la tecnología suficiente es indistinguible
+                                    de la magia. </span>¡Bienvenido a mi portafolio!
                             </h2>
-                            <a href="#contactame"
-                                class="py-3 px-4 block mt-5 bg-indigo-500 hover:bg-indigo-600 transition bg duration-300 text-white rounded-lg max-w-fit">Contáctame
-                                <i class="fa-solid fa-paper-plane"></i></a>
+                            <div class="grid grid-cols-2 gap-2 pt-5 text-xs md:text-sm w-[70%] md:w-full md:flex">
+                                <a href="https://www.linkedin.com/in/marcos-pacheco-tacay-674206249/"
+                                    class="py-3 md:px-4 px-3 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
+                                    target="_blank">
+                                    <i class="fa-brands fa-linkedin mr-1"></i>
+                                    Linkedin
+                                </a>
+                                <a href="https://github.com/silverblade34"
+                                    class="py-3 md:px-4 px-3 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
+                                    target="_blank">
+                                    <i class="fa-brands fa-github mr-1"></i>
+                                    Github
+                                </a>
+                                <a href="mailto:mpacheco.tacay@gmail.com"
+                                    class="py-3 md:px-4 px-3 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit col-span-3 md:col-span-1"
+                                    target="_blank">
+                                    <i class="fa-solid fa-envelope mr-1"></i>
+                                    mpacheco.tacay@gmail.com
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-full flex items-center box-border" data-aos="fade-left" data-aos-duration="2000">
-                        <img src="./assets/banner2.webp" class="w-full px-3 z-0" alt="">
+                    <div class="items-center box-border justify-center col-span-2 md:flex hidden" data-aos="fade-left"
+                        data-aos-duration="2000">
+                        <img src="./assets/banner2.webp" class="z-0" alt="">
                     </div>
                 </div>
             </section>
-            <section id="about" class="flex justify-center items-center lg:h-screen">
+            <section id="about" class="flex justify-center items-center h-screen mt-[9rem] md:mt-0">
                 <div>
-                    <div class="col-span-2 h-min">
-                        <h2 class="text-center text-4xl font-bold">Sobre mí</h2>
-                        <p class="text-center">"Transformando líneas de código en soluciones innovadoras."</p>
+                    <div class="col-span-2 h-min text-start">
+                        <h2 class="text-4xl font-bold text-gray-800"><i class="fa-solid fa-user fa-xs"></i> Sobre mí
+                        </h2>
                     </div>
                     <div class="lg:grid gap-4 lg:grid-cols-5 block lg:pt-20 pt-10">
+                        <div class="flex flex-wrap col-span-3" data-aos="fade-left" data-aos-duration="2000">
+                            <p class="text-gray-600 text-justify pt-5 text-lg">Soy un Ingeniero de Software apasionado
+                                por la
+                                programación y la innovación tecnológica.
+                                <span class="text-indigo-800 dark:text-indigo-500">
+                                    Tengo 2 años de experiencia trabajando en
+                                    proyectos de alto impacto y calidad,
+                                </span>
+                                como sistemas ERP personalizados para la gestión
+                                empresarial, un sistema de monitoreo en tiempo real con GPS y alarmas vehiculares, y un
+                                sistema de gestión de abastecimiento de combustible para cisternas, entre otros.
+                                <br> <br>
+                                Mi objetivo es seguir aprendiendo y creciendo como profesional, y aportar soluciones
+                                creativas y eficientes a los problemas y necesidades de mis clientes. Me encanta
+                                enfrentarme a nuevos desafíos y proyectos que me permitan demostrar mi
+                                <span class="text-sky-800 dark:text-sky-500">
+                                    talento y versatilidad como desarrollador web y móvil.
+                                </span>
+                            </p>
+                            <a href="./assets/CV-MARCOS PACHECO.pdf" target="_blank"
+                                class="max-h-12 py-3 px-4 mt-5 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full text-xs md:text-sm">Descargar
+                                CV
+                                <i class="fa-solid fa-download"></i>
+                            </a>
+                        </div>
                         <div class="flex items-center justify-center pb-10 lg:pb-0 col-span-2" data-aos="fade-right"
                             data-aos-duration="2000">
                             <img src="./assets/perfil.png" alt="" class="rounded-3xl w-[70%]">
-                        </div>
-                        <div class="flex flex-wrap col-span-3" data-aos="fade-left" data-aos-duration="2000">
-                            <div class="grid grid-cols-2 w-full gap-4">
-                                <div class="border rounded-xl p-4 text-center">
-                                    <div class="w-full flex justify-center">
-                                        <img src="./assets/experience.png" alt="Experience icon" class="h-[2rem]" />
-                                    </div>
-                                    <h3>Experiencia</h3>
-                                    <p>1+ años <br />FullStack Development</p>
-                                </div>
-                                <div class="border rounded-xl p-4 text-center">
-                                    <div class="w-full flex justify-center">
-                                        <img src="./assets/education.png" alt="Education icon" class="h-[2rem]" />
-                                    </div>
-                                    <h3>Educación</h3>
-                                    <p>Universidad<br />Tecnológica del Perú</p>
-                                </div>
-                            </div>
-                            <p class="text-gray-600 text-justify pt-5">Soy Ingeniero de software y he trabajado
-                                en proyectos destacados, incluyendo sistemas ERP personalizados para la gestión
-                                empresarial, un sistema de monitoreo en tiempo real con GPS y alarmas vehiculares, así
-                                como un sistema de gestión de abastecimiento de combustible para cisternas, etc.
-                                Mi objetivo es seguir ampliando mis habilidades y conocimientos, y contribuir con
-                                soluciones tecnológicas innovadoras. Estoy emocionado por enfrentar nuevos desafíos y
-                                proyectos. </p>
-                            <a href="./assets/CV-MARCOS PACHECO.pdf" target="_blank"
-                                class="block max-h-12 py-3 px-4 mt-5 bg-indigo-500 hover:bg-indigo-600 transition bg duration-300 text-white rounded-lg">Descargar
-                                CV
-                                <i class="fa-solid fa-download"></i></a>
                         </div>
                     </div>
                 </div>
             </section>
             <section id="skills" class="flex justify-center lg:h-screen items-center mt-[3rem] lg:mt-0">
                 <div class="w-full">
-                    <h2 class="text-center text-4xl font-bold pb-5">Tecnologías usadas</h2>
+                    <h2 class="text-gray-800 text-4xl font-bold pb-5 text-start"><i
+                            class="fa-solid fa-briefcase fa-xs"></i> Tecnologías usadas</h2>
                     <div
                         class="item bg-indigo-500 flex items-center justify-between rounded-lg py-4 px-6 w-full mt-5 text-white">
                         <p>Frontend developer</p>
@@ -320,36 +330,74 @@
             </section>
             <section id="proyectos" class="flex justify-center items-center my-[8rem]">
                 <div class="w-full">
-                    <div>
-                        <h2 class="text-center text-4xl font-bold">Ultimos proyectos</h2>
-                    </div>
-                    <div class="md:grid md:grid-cols-2 block w-full gap-5 pt-10">
-                        <div class="container_project p-6 rounded-lg relative mb-3 md:mb-0">
-                            <img src="./assets/project-1.jpeg" alt=""
-                                class="rounded-lg hover:shadow-md hover:scale-105 transition duration-300">
-                            <h3 class="font-bold py-2 text-2xl text-gray-300">Monitor S4</h3>
-                            <p class="text-sm text-white text-justify pb-[7rem]">Esta plataforma se integra
-                                con otras soluciones líderes en la industria, como HOWEN para cámaras de seguridad y
-                                WIALON para el registro de eventos. Con ella, puedes realizar un seguimiento en
-                                tiempo real de vehículos y recibir alarmas personalizables de diferentes tipos, como
-                                exceso de velocidad, botón de pánico, desviación de ruta o paradas prolongadas. En
-                                este proyecto fui el encargado de realizar el Frontend con VUEJS. <br><br>
-                            </p>
-                            <div class="bg-transparent absolute bottom-0 left-0 bg-gray-800 p-6 rounded-lg">
-                                <div class="text-sm text-white">
+                    <h2 class="text-gray-800 text-start text-4xl font-bold"><i class="fa-solid fa-code"></i> Ultimos
+                        proyectos</h2>
+                    <div class="block w-full gap-5 pt-5">
+                        <div class="rounded-lg relative mb-3 md:mb-0">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <h3 class="font-bold py-2 text-3xl text-sky-400">Monitor S4</h3>
+                                    <p class="text-lg text-gray-600 text-justify">Esta plataforma se integra
+                                        con otras soluciones como HOWEN para cámaras de seguridad y
+                                        WIALON para el registro de eventos. Permite seguimiento en
+                                        tiempo real de vehículos y recibir alarmas personalizables de diferentes tipos,
+                                        como
+                                        exceso de velocidad, botón de pánico, desviación de ruta o paradas prolongadas.
+                                        En
+                                        este proyecto fui el encargado de realizar el Frontend.
+                                    </p>
+                                    <div class="text-lg text-gray-600">
+                                        <span class="text-indigo-400">Cuenta demo:</span> <br>
+                                        <i class="fa-solid fa-user text-gray-500"></i> Usuario: sys4log <br>
+                                        <i class="fa-solid fa-lock text-gray-500"></i> Contraseña: sys4log.admin3#-/
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex gap-1 py-3 text-xs">
+                                        <a href="https://github.com/silverblade34/platform_monitors4"
+                                            class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
+                                            target="_blank">
+                                            Vue.js
+                                        </a>
+                                        <a href="http://157.245.141.38:3040/login"
+                                            class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit col-span-3 md:col-span-1"
+                                            target="_blank">
+                                            Tailwind CSS
+                                        </a>
+                                    </div>
+                                    <img src="./assets/presentation_monitors4.png" alt="Vista de plataforma MonitorS4"
+                                        class="rounded-xl hover:shadow-xl transition duration-300 w-full">
+                                    <div class="flex gap-1 py-3">
+                                        <a href="https://github.com/silverblade34/platform_monitors4"
+                                            class="py-3 md:px-4 px-3 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
+                                            target="_blank">
+                                            <i class="fa-brands fa-github mr-1"></i>
+                                            Ver código fuente
+                                        </a>
+                                        <a href="http://157.245.141.38:3040/login"
+                                            class="py-3 md:px-4 px-3 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit col-span-3 md:col-span-1"
+                                            target="_blank">
+                                            <i class="fa-solid fa-globe mr-1"></i>
+                                            Ir al sitio web
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="bg-transparent absolute bottom-0 left-0 bg-gray-800 rounded-lg">
+                                <div class="text-sm text-gray-800">
                                     <span class="font-bold text-gray-300">Cuenta demo:</span> <br>
                                     <i class="fa-solid fa-user text-gray-400"></i> Usuario: duragas <br>
                                     <i class="fa-solid fa-lock text-gray-400"></i> Contraseña: duragas1234
                                 </div>
                                 <div class="flex justify-start gap-3 pt-2">
                                     <a href="http://157.245.141.38:3040/login" target="_blank"
-                                        class="bg-indigo-400 text-white rounded-xl py-2 px-6 font-bold hover:bg-indigo-600 transition bg duration-300"><i
+                                        class="bg-indigo-400 text-gray-800 rounded-xl py-2 px-6 font-bold hover:bg-indigo-600 transition bg duration-300"><i
                                             class="fa-solid fa-link mr-2"></i> Demo</a>
                                     <a href="https://github.com/silverblade34/platform_monitors4" target="_blank"
-                                        class="bg-indigo-400 text-white rounded-xl py-2 px-6 font-bold hover:bg-indigo-600 transition bg duration-300"><i
+                                        class="bg-indigo-400 text-gray-800 rounded-xl py-2 px-6 font-bold hover:bg-indigo-600 transition bg duration-300"><i
                                             class="fa-brands fa-github"></i></a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="container_project p-6 rounded-lg relative mb-3 md:mb-0">
                             <img src="./assets/project-2.jpeg" alt=""
@@ -434,7 +482,7 @@
             </section>
             <section class="contacto flex justify-center lg:h-screen items-center" id="contactame">
                 <div class="w-full">
-                    <h2 class="text-center text-4xl font-bold pb-5">Contáctame</h2>
+                    <h2 class="text-gray-800 text-center text-4xl font-bold pb-5">Contáctame</h2>
                     <div class="w-full flex justify-center">
                         <div class="w-full lg:w-[50%]">
                             <div class="contact-info-upper-container">
