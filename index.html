@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcos Pacheco</title>
-    <script src="./scripts/script.js" defer></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Marcos Pacheco | Ingeniero de Software y Desarrollador Full Stack</title>
+    <meta name="description"
+        content="Soy un Ingeniero de Software y Desarrollador Full Stack con 2 años de experiencia en proyectos de alto impacto y calidad. Te ofrezco soluciones creativas y eficientes para tus necesidades web y móviles.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://marcospacheco.com/">
+    <link rel="icon" type="svg" href="./assets/logo-gato-blanco.svg" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="svg" href="./assets/logo-gato-blanco.svg" />
+    <script src="./scripts/script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Link AOS -->
     <link href="scripts/aos/aos.css" rel="stylesheet">
     <script src="scripts/aos/aos.js"></script>
+    <meta property="og:title" content="Marcos Pacheco | Ingeniero de Software y Desarrollador Full Stack">
+    <meta property="og:description"
+        content="Soy un Ingeniero de Software y Desarrollador Full Stack con 2 años de experiencia en proyectos de alto impacto y calidad. Te ofrezco soluciones creativas y eficientes para tus necesidades web y móviles.">
+    <meta property="og:image" content="./assets/logo-gato-blanco.svg">
+    <meta property="og:url" content="https://marcospacheco.com/">
+    <meta property="og:type" content="website">
 </head>
+
 
 <body>
     <header class="flex p-2 px-5 justify-center items-center fixed top-0 left-0 right-0 text-gray-500 w-full">
@@ -30,10 +41,10 @@
                     <a href="#about">Sobre mí</a>
                 </div>
                 <div class="item hover:bg-indigo-600 p-1 px-2 rounded-xl hover:text-white transition bg duration-300 ">
-                    <a href="#skills">Tecnologías</a>
+                    <a href="#proyectos">Proyectos</a>
                 </div>
                 <div class="item hover:bg-indigo-600 p-1 px-2 rounded-xl hover:text-white transition bg duration-300 ">
-                    <a href="#proyectos">Proyectos</a>
+                    <a href="#skills">Tecnologías</a>
                 </div>
                 <div class="item hover:bg-indigo-600 p-1 px-2 rounded-xl hover:text-white transition bg duration-300 ">
                     <a href="#contactame">Contacto</a>
@@ -49,22 +60,6 @@
                     class="fa-brands text-indigo-500 hover:text-indigo-600 fa-github text-2xl mt-2"></i></a>
         </div>
     </aside>
-    <div class="area-animation">
-        <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
     <main class="banner flex justify-center overflow-hidden">
         <div class="container w-[90%] lg:w-[1000px]">
             <section class="flex justify-center h-screen items-center" id="home">
@@ -110,7 +105,7 @@
                     </div>
                 </div>
             </section>
-            <section id="about" class="flex justify-center items-center h-screen mt-[9rem] md:mt-0">
+            <section id="about" class="flex justify-center items-center h-screen mt-[11rem] md:mt-0">
                 <div>
                     <div class="col-span-2 text-start">
                         <h2 class="text-4xl font-bold text-gray-800"><i class="fa-solid fa-user fa-xs"></i> Sobre mí
@@ -142,14 +137,295 @@
                                 <i class="fa-solid fa-download"></i>
                             </a>
                         </div>
-                        <div class="flex items-start justify-center pb-10 lg:pb-0 col-span-2" data-aos="fade-right"
-                            data-aos-duration="2000">
+                        <div class="flex items-start justify-center pb-10 lg:pb-0 col-span-2 pt-5 md:pt-0"
+                            data-aos="fade-right" data-aos-duration="2000">
                             <img src="./assets/perfil.png" alt="" class="rounded-3xl w-[70%]">
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="skills" class="flex justify-center lg:h-screen items-center mt-[3rem] lg:mt-0">
+            <section id="proyectos" class="flex justify-center items-center pt-[11rem] md:pt-0">
+                <div class="w-full">
+                    <h2 class="text-gray-800 text-start text-4xl font-bold"><i class="fa-solid fa-code"></i> Ultimos
+                        proyectos</h2>
+                    <div class="block w-full gap-5 pt-5">
+                        <div class="block md:grid md:grid-cols-2 gap-4">
+                            <div>
+                                <h3 class="font-bold py-2 text-3xl text-indigo-500">Monitor S4</h3>
+                                <p class="text-lg text-gray-600 text-justify">Esta plataforma se integra
+                                    con otras soluciones como HOWEN para cámaras de seguridad y
+                                    WIALON para el registro de eventos. Permite seguimiento en
+                                    tiempo real de vehículos y recibir alarmas personalizables de diferentes tipos,
+                                    como
+                                    exceso de velocidad, botón de pánico, desviación de ruta o paradas prolongadas.
+                                    En
+                                    este proyecto fui el encargado de realizar el Frontend.
+                                </p>
+                                <div class="text-lg text-gray-600">
+                                    <span class="text-indigo-400 font-bold">Cuenta demo:</span> <br>
+                                    <i class="fa-solid fa-user text-gray-500"></i> Usuario: duragas <br>
+                                    <i class="fa-solid fa-lock text-gray-500"></i> Contraseña: duragas1234
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex-auto gap-1 py-3 text-xs">
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Vue.js
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Vuetify.js
+                                    </button>
+                                </div>
+                                <img src="./assets/presentation_monitors4.png" alt="Vista de plataforma MonitorS4"
+                                    class="rounded-xl hover:shadow-xl transition duration-300 w-full">
+                                <div class="flex gap-1 py-3">
+                                    <a href="https://github.com/silverblade34/platform_monitors4"
+                                        class="py-3 md:px-4 px-3 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
+                                        target="_blank">
+                                        <i class="fa-brands fa-github mr-1"></i>
+                                        Ver código fuente
+                                    </a>
+                                    <a href="http://157.245.141.38:3040/login"
+                                        class="py-3 md:px-4 px-3 bg-blue-600 hover:bg-blue-700 transition bg duration-300 text-white rounded-full max-w-fit col-span-3 md:col-span-1"
+                                        target="_blank">
+                                        <i class="fa-solid fa-globe mr-1"></i>
+                                        Ir al sitio web
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block md:grid md:grid-cols-2 gap-5 pt-8">
+                            <div>
+                                <h3 class="font-bold py-2 text-3xl text-indigo-500">QuoteFast</h3>
+                                <p class="text-lg text-gray-600 text-justify">Esta plataforma permite realizar
+                                    cotizaciones rapidas, descargar pdf de cotización, integración con SAP, manejo de
+                                    rango de precios, etc. En este
+                                    proyecto desarrollé el Frontend con Vue.js y el Backend con Nest.js. <br>
+                                    - Documentación API: <a href="http://204.48.17.106:5030/docs" target="_blank"
+                                        class="text-blue-400">http://204.48.17.106:5030/docs</a><br>
+                                </p>
+                                <div class="text-lg text-gray-600">
+                                    <span class="text-indigo-400 font-bold">Cuenta demo:</span> <br>
+                                    <i class="fa-solid fa-user text-gray-500"></i> Usuario: sys4log <br>
+                                    <i class="fa-solid fa-lock text-gray-500"></i> Contraseña: sys4log.admin3#-/
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex-auto gap-1 py-3 text-xs">
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Vue.js
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Vuetify.js
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Nest.js
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        JWT
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        MySQL
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit mt-2 md:mt-0">
+                                        Typescript
+                                    </button>
+                                </div>
+                                <img src="./assets/presentation_quotefast.png" alt="Vista de plataforma QuoteFast"
+                                    class="rounded-xl hover:shadow-xl transition duration-300 w-full">
+                                <div class="flex gap-1 py-3">
+                                    <a href="https://gitlab.com/prueba807/facturacion_electronica"
+                                        class="py-3 md:px-4 px-3 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
+                                        target="_blank">
+                                        <i class="fa-brands fa-github mr-1"></i>
+                                        Ver código fuente
+                                    </a>
+                                    <a href="http://204.48.17.106:3050/login"
+                                        class="py-3 md:px-4 px-3 bg-blue-600 hover:bg-blue-700 transition bg duration-300 text-white rounded-full max-w-fit col-span-3 md:col-span-1"
+                                        target="_blank">
+                                        <i class="fa-solid fa-globe mr-1"></i>
+                                        Ir al sitio web
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block md:grid md:grid-cols-2 gap-4 pt-8">
+                            <div>
+                                <h3 class="font-bold py-2 text-3xl text-indigo-500">EFUEL</h3>
+                                <p class="text-lg text-gray-600 text-justify">Plataforma desarrollada
+                                    para gestionar la información de
+                                    los abastecimientos de las cisternas de PETROTHOR, se tiene diversos graficos y
+                                    opciones de exportación de los datos. Adicional, se monitorea en tiempo real la
+                                    ubicación de las cisternas. El Frontend lo elaboré con Vue.js y el Backend con
+                                    Express.js
+                                </p>
+                            </div>
+                            <div>
+                                <div class="flex-auto gap-1 py-3 text-xs">
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Vue.js
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Tailwind CSS
+                                    </button>
+                                </div>
+                                <img src="./assets/presentation_efuel.png" alt="Vista de plataforma EFUEL"
+                                    class="rounded-xl hover:shadow-xl transition duration-300 w-full">
+                                <div class="flex gap-1 py-3">
+                                    <a href="https://gitlab.com/prueba807/petrothor_web_v2"
+                                        class="py-3 md:px-4 px-3 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
+                                        target="_blank">
+                                        <i class="fa-brands fa-github mr-1"></i>
+                                        Ver código fuente
+                                    </a>
+                                    <a href="http://143.244.144.235/login"
+                                        class="py-3 md:px-4 px-3 bg-blue-600 hover:bg-blue-700 transition bg duration-300 text-white rounded-full max-w-fit col-span-3 md:col-span-1"
+                                        target="_blank">
+                                        <i class="fa-solid fa-globe mr-1"></i>
+                                        Ir al sitio web
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block md:grid md:grid-cols-2 gap-4 pt-8">
+                            <div>
+                                <h3 class="font-bold py-2 text-3xl text-indigo-500">Aula20</h3>
+                                <p class="text-lg text-gray-600 text-justify">La plataforma de aula20 proporciona
+                                    simulaciones de exámenes de admisión para evaluar el nivel de aprendizaje de los
+                                    estudiantes en todos los cursos. Tambien incluye, evaluación basada
+                                    en la preparación universitaria, el seguimiento del progreso académico y la mejora
+                                    del
+                                    rendimiento en áreas deficientes a través de exámenes individuales. En este
+                                    proyecto desarrollé el Frontend con Vue.js y el Backend con Nest.js.
+                                </p>
+                                <div class="text-lg text-gray-600">
+                                    <span class="text-indigo-400 font-bold">Cuenta demo:</span> <br>
+                                    <i class="fa-solid fa-user text-gray-500"></i> Usuario: aula20 <br>
+                                    <i class="fa-solid fa-lock text-gray-500"></i> Contraseña: aula204$
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex-auto gap-1 py-3 text-xs">
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Vue.js
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Vuetify.js
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Nest.js
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        JWT
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        MySQL
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit mt-2 md:mt-0">
+                                        Typescript
+                                    </button>
+                                </div>
+                                <img src="./assets/presentation_aula20.png" alt="Vista de plataforma AULA20"
+                                    class="rounded-xl hover:shadow-xl transition duration-300 w-full">
+                                <div class="flex gap-1 py-3">
+                                    <a href="https://github.com/silverblade34/platform_academia_aula20"
+                                        class="py-3 md:px-4 px-3 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
+                                        target="_blank">
+                                        <i class="fa-brands fa-github mr-1"></i>
+                                        Ver código fuente
+                                    </a>
+                                    <a href="http://198.211.99.223:3020/dashboard"
+                                        class="py-3 md:px-4 px-3 bg-blue-600 hover:bg-blue-700 transition bg duration-300 text-white rounded-full max-w-fit col-span-3 md:col-span-1"
+                                        target="_blank">
+                                        <i class="fa-solid fa-globe mr-1"></i>
+                                        Ir al sitio web
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block md:grid md:grid-cols-2 gap-4 pt-8">
+                            <div>
+                                <h3 class="font-bold py-2 text-3xl text-indigo-500">CITV</h3>
+                                <p class="text-lg text-gray-600 text-justify">Aplicativo movil para la vista de reportes
+                                    en tiempo real de las plantas de revisiones tecnicas de un usuario esta conectado a
+                                    sus servidores. Desarrollé el aplicativo con Flutter usando el micro-framework GetX
+                                    y el Backend con Nest.js
+                                </p>
+                                <div class="text-lg text-gray-600">
+                                    <span class="text-indigo-400 font-bold">Cuenta demo:</span> <br>
+                                    <i class="fa-solid fa-user text-gray-500"></i> Usuario: jyj.admin <br>
+                                    <i class="fa-solid fa-lock text-gray-500"></i> Contraseña: jyj.admin4$
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex-auto gap-1 py-3 text-xs">
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Flutter
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Dart
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        GetX
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Typescript
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Nest.js
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit mt-2 md:mt-0">
+                                        JWT
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit mt-2 md:mt-0">
+                                        MySQL
+                                    </button>
+                                </div>
+                                <img src="./assets/presentation_citvs.png" alt="Vista de plataforma CITV"
+                                    class="rounded-xl hover:shadow-xl transition duration-300 w-full">
+                                <div class="flex gap-1 py-3">
+                                    <a href="https://github.com/silverblade34/app_mobile_citvs"
+                                        class="py-3 md:px-4 px-3 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
+                                        target="_blank">
+                                        <i class="fa-brands fa-github md:mr-1 mr-0"></i>
+                                        Ver código fuente
+                                    </a>
+                                    <a href="#"
+                                        class="py-3 md:px-4 px-3 bg-green-600 hover:bg-green-700 transition bg duration-300 text-white rounded-full max-w-fit col-span-3 md:col-span-1"
+                                        target="_blank">
+                                        <i class="fa-brands fa-android md:mr-1 mr-0"></i>
+                                        Descarga app
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="flex justify-center lg:h-screen items-center pt-[5rem] md:pt-0">
                 <div class="w-full">
                     <h2 class="text-gray-800 text-4xl font-bold pb-5 text-start"><i
                             class="fa-solid fa-briefcase fa-xs"></i> Tecnologías usadas</h2>
@@ -328,290 +604,7 @@
                     </div>
                 </div>
             </section>
-            <section id="proyectos" class="flex justify-center items-center my-[8rem]">
-                <div class="w-full">
-                    <h2 class="text-gray-800 text-start text-4xl font-bold"><i class="fa-solid fa-code"></i> Ultimos
-                        proyectos</h2>
-                    <div class="block w-full gap-5 pt-5">
-                        <div class="grid grid-cols-2 gap-4">
-                            <div>
-                                <h3 class="font-bold py-2 text-3xl text-indigo-500">Monitor S4</h3>
-                                <p class="text-lg text-gray-600 text-justify">Esta plataforma se integra
-                                    con otras soluciones como HOWEN para cámaras de seguridad y
-                                    WIALON para el registro de eventos. Permite seguimiento en
-                                    tiempo real de vehículos y recibir alarmas personalizables de diferentes tipos,
-                                    como
-                                    exceso de velocidad, botón de pánico, desviación de ruta o paradas prolongadas.
-                                    En
-                                    este proyecto fui el encargado de realizar el Frontend.
-                                </p>
-                                <div class="text-lg text-gray-600">
-                                    <span class="text-indigo-400 font-bold">Cuenta demo:</span> <br>
-                                    <i class="fa-solid fa-user text-gray-500"></i> Usuario: duragas <br>
-                                    <i class="fa-solid fa-lock text-gray-500"></i> Contraseña: duragas1234
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex gap-1 py-3 text-xs">
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Vue.js
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Vuetify.js
-                                    </button>
-                                </div>
-                                <img src="./assets/presentation_monitors4.png" alt="Vista de plataforma MonitorS4"
-                                    class="rounded-xl hover:shadow-xl transition duration-300 w-full">
-                                <div class="flex gap-1 py-3">
-                                    <a href="https://github.com/silverblade34/platform_monitors4"
-                                        class="py-3 md:px-4 px-3 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
-                                        target="_blank">
-                                        <i class="fa-brands fa-github mr-1"></i>
-                                        Ver código fuente
-                                    </a>
-                                    <a href="http://157.245.141.38:3040/login"
-                                        class="py-3 md:px-4 px-3 bg-blue-600 hover:bg-blue-700 transition bg duration-300 text-white rounded-full max-w-fit col-span-3 md:col-span-1"
-                                        target="_blank">
-                                        <i class="fa-solid fa-globe mr-1"></i>
-                                        Ir al sitio web
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-2 gap-5 pt-8">
-                            <div>
-                                <h3 class="font-bold py-2 text-3xl text-indigo-500">QuoteFast</h3>
-                                <p class="text-lg text-gray-600 text-justify">Esta plataforma permite realizar
-                                    cotizaciones rapidas, descargar pdf de cotización, integración con SAP, manejo de
-                                    rango de precios, etc. En este
-                                    proyecto desarrollé el Frontend con Vue.js y el Backend con Nest.js. <br>
-                                    - Documentación API: <a href="http://204.48.17.106:5030/docs" target="_blank"
-                                        class="text-blue-400">http://204.48.17.106:5030/docs</a><br>
-                                </p>
-                                <div class="text-lg text-gray-600">
-                                    <span class="text-indigo-400 font-bold">Cuenta demo:</span> <br>
-                                    <i class="fa-solid fa-user text-gray-500"></i> Usuario: sys4log <br>
-                                    <i class="fa-solid fa-lock text-gray-500"></i> Contraseña: sys4log.admin3#-/
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex gap-1 py-3 text-xs">
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Vue.js
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Vuetify.js
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Nest.js
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        JWT
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        MySQL
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Typescript
-                                    </button>
-                                </div>
-                                <img src="./assets/presentation_quotefast.png" alt="Vista de plataforma QuoteFast"
-                                    class="rounded-xl hover:shadow-xl transition duration-300 w-full">
-                                <div class="flex gap-1 py-3">
-                                    <a href="https://gitlab.com/prueba807/facturacion_electronica"
-                                        class="py-3 md:px-4 px-3 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
-                                        target="_blank">
-                                        <i class="fa-brands fa-github mr-1"></i>
-                                        Ver código fuente
-                                    </a>
-                                    <a href="http://204.48.17.106:3050/login"
-                                        class="py-3 md:px-4 px-3 bg-blue-600 hover:bg-blue-700 transition bg duration-300 text-white rounded-full max-w-fit col-span-3 md:col-span-1"
-                                        target="_blank">
-                                        <i class="fa-solid fa-globe mr-1"></i>
-                                        Ir al sitio web
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-2 gap-4 pt-8">
-                            <div>
-                                <h3 class="font-bold py-2 text-3xl text-indigo-500">EFUEL</h3>
-                                <p class="text-lg text-gray-600 text-justify">Plataforma desarrollada
-                                    para gestionar la información de
-                                    los abastecimientos de las cisternas de PETROTHOR, se tiene diversos graficos y
-                                    opciones de exportación de los datos. Adicional, se monitorea en tiempo real la
-                                    ubicación de las cisternas. El Frontend lo elaboré con Vue.js y el Backend con
-                                    Express.js
-                                </p>
-                            </div>
-                            <div>
-                                <div class="flex gap-1 py-3 text-xs">
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Vue.js
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Tailwind CSS
-                                    </button>
-                                </div>
-                                <img src="./assets/presentation_efuel.png" alt="Vista de plataforma EFUEL"
-                                    class="rounded-xl hover:shadow-xl transition duration-300 w-full">
-                                <div class="flex gap-1 py-3">
-                                    <a href="https://gitlab.com/prueba807/petrothor_web_v2"
-                                        class="py-3 md:px-4 px-3 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
-                                        target="_blank">
-                                        <i class="fa-brands fa-github mr-1"></i>
-                                        Ver código fuente
-                                    </a>
-                                    <a href="http://143.244.144.235/login"
-                                        class="py-3 md:px-4 px-3 bg-blue-600 hover:bg-blue-700 transition bg duration-300 text-white rounded-full max-w-fit col-span-3 md:col-span-1"
-                                        target="_blank">
-                                        <i class="fa-solid fa-globe mr-1"></i>
-                                        Ir al sitio web
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-2 gap-4 pt-8">
-                            <div>
-                                <h3 class="font-bold py-2 text-3xl text-indigo-500">Aula20</h3>
-                                <p class="text-lg text-gray-600 text-justify">La plataforma de aula20 proporciona
-                                    simulaciones de exámenes de admisión para evaluar el nivel de aprendizaje de los
-                                    estudiantes en todos los cursos. Tambien incluye, evaluación basada
-                                    en la preparación universitaria, el seguimiento del progreso académico y la mejora
-                                    del
-                                    rendimiento en áreas deficientes a través de exámenes individuales. En este
-                                    proyecto desarrollé el Frontend con Vue.js y el Backend con Nest.js.
-                                </p>
-                                <div class="text-lg text-gray-600">
-                                    <span class="text-indigo-400 font-bold">Cuenta demo:</span> <br>
-                                    <i class="fa-solid fa-user text-gray-500"></i> Usuario: aula20 <br>
-                                    <i class="fa-solid fa-lock text-gray-500"></i> Contraseña: aula204$
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex gap-1 py-3 text-xs">
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Vue.js
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Vuetify.js
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Nest.js
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        JWT
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        MySQL
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Typescript
-                                    </button>
-                                </div>
-                                <img src="./assets/presentation_aula20.png" alt="Vista de plataforma AULA20"
-                                    class="rounded-xl hover:shadow-xl transition duration-300 w-full">
-                                <div class="flex gap-1 py-3">
-                                    <a href="https://github.com/silverblade34/platform_academia_aula20"
-                                        class="py-3 md:px-4 px-3 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
-                                        target="_blank">
-                                        <i class="fa-brands fa-github mr-1"></i>
-                                        Ver código fuente
-                                    </a>
-                                    <a href="http://198.211.99.223:3020/dashboard"
-                                        class="py-3 md:px-4 px-3 bg-blue-600 hover:bg-blue-700 transition bg duration-300 text-white rounded-full max-w-fit col-span-3 md:col-span-1"
-                                        target="_blank">
-                                        <i class="fa-solid fa-globe mr-1"></i>
-                                        Ir al sitio web
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-2 gap-4 pt-8">
-                            <div>
-                                <h3 class="font-bold py-2 text-3xl text-indigo-500">CITV</h3>
-                                <p class="text-lg text-gray-600 text-justify">Aplicativo movil para la vista de reportes
-                                    en tiempo real de las plantas de revisiones tecnicas de un usuario esta conectado a
-                                    sus servidores. Desarrollé el aplicativo con Flutter usando el micro-framework GetX
-                                    y el Backend con Nest.js
-                                </p>
-                                <div class="text-lg text-gray-600">
-                                    <span class="text-indigo-400 font-bold">Cuenta demo:</span> <br>
-                                    <i class="fa-solid fa-user text-gray-500"></i> Usuario: jyj.admin <br>
-                                    <i class="fa-solid fa-lock text-gray-500"></i> Contraseña: jyj.admin4$
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex gap-1 py-3 text-xs">
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Flutter
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Dart
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        GetX
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Typescript
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Nest.js
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        JWT
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        MySQL
-                                    </button>
-                                </div>
-                                <img src="./assets/presentation_citvs.png" alt="Vista de plataforma CITV"
-                                    class="rounded-xl hover:shadow-xl transition duration-300 w-full">
-                                <div class="flex gap-1 py-3">
-                                    <a href="https://github.com/silverblade34/app_mobile_citvs"
-                                        class="py-3 md:px-4 px-3 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
-                                        target="_blank">
-                                        <i class="fa-brands fa-github mr-1"></i>
-                                        Ver código fuente
-                                    </a>
-                                    <a href="#"
-                                        class="py-3 md:px-4 px-3 bg-green-600 hover:bg-green-700 transition bg duration-300 text-white rounded-full max-w-fit col-span-3 md:col-span-1"
-                                        target="_blank">
-                                        <i class="fa-brands fa-android mr-1"></i>
-                                        Descargar app
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="contacto flex justify-center lg:h-screen items-center" id="contactame">
+            <section class="contacto flex justify-center lg:h-screen items-center pt-[11rem] md:pt-0" id="contactame">
                 <div class="w-full">
                     <h2 class="text-gray-800 text-center text-4xl font-bold pb-5">Contáctame</h2>
                     <div class="w-full flex justify-center">
@@ -634,7 +627,7 @@
                     </div>
                 </div>
             </section>
-            <footer>
+            <footer class="md:h-[3rem] h-[4rem] py-20 md:pt-0">
                 <p>Copyright &#169; 2024 Marcos Pacheco. Todos los derechos reservados.</p>
             </footer>
         </div>
