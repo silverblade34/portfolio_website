@@ -32,26 +32,25 @@
     <header class="flex p-2 px-5 justify-center items-center fixed top-0 left-0 right-0 text-gray-500 w-full">
         <div class="flex bg-gray-900 text-white px-2 md:px-5 rounded-full items-center py-2">
             <div class="logo text-gray-500 font-extrabold pr-3 hidden md:block">
-                <a href="#home" class="flex items-center">
+                <a href="#" class="flex items-center" onclick="scrollToSection('home')">
                     <img src="./assets/logo-gato-blanco.svg" class="w-8 mr-2" alt="">
                 </a>
             </div>
             <nav class="flex gap-1 md:gap-5 font-medium text-xs md:text-sm">
-                <div class="item hover:bg-indigo-600 p-1 px-2 rounded-xl hover:text-white transition bg duration-300 ">
-                    <a href="#experience">Experiencia</a>
-                </div>
-                <div class="item hover:bg-indigo-600 p-1 px-2 rounded-xl hover:text-white transition bg duration-300 ">
-                    <a href="#proyectos">Proyectos</a>
-                </div>
-                <div class="item hover:bg-indigo-600 p-1 px-2 rounded-xl hover:text-white transition bg duration-300 ">
-                    <a href="#skills">Tecnologías</a>
-                </div>
-                <div class="item hover:bg-indigo-600 p-1 px-2 rounded-xl hover:text-white transition bg duration-300 ">
-                    <a href="#about">Sobre mi</a>
-                </div>
-                <div class="item hover:bg-indigo-600 p-1 px-2 rounded-xl hover:text-white transition bg duration-300 ">
-                    <a href="#contactame">Contacto</a>
-                </div>
+                <nav class="flex gap-1 md:gap-5 font-medium text-xs md:text-sm">
+                    <a href="#"
+                        class="item-nav-section hover:bg-indigo-600 p-1 px-2 rounded-xl hover:text-white transition duration-300"
+                        onclick="scrollToSection('experience')">Experiencia</a>
+                    <a href="#"
+                        class="item-nav-section hover:bg-indigo-600 p-1 px-2 rounded-xl hover:text-white transition duration-300"
+                        onclick="scrollToSection('proyects')">Proyectos</a>
+                    <a href="#"
+                        class="item-nav-section hover:bg-indigo-600 p-1 px-2 rounded-xl hover:text-white transition duration-300"
+                        onclick="scrollToSection('about')">Sobre mí</a>
+                    <a href="#"
+                        class="item-nav-section hover:bg-indigo-600 p-1 px-2 rounded-xl hover:text-white transition duration-300"
+                        onclick="scrollToSection('contactame')">Contacto</a>
+                </nav>
             </nav>
         </div>
     </header>
@@ -65,7 +64,7 @@
     </aside>
     <main class="banner flex justify-center overflow-hidden">
         <div class="container w-[90%] lg:w-[1000px]">
-            <section class="flex justify-center h-screen items-center" id="home">
+            <section id="home" class="flex justify-center h-screen items-center">
                 <div class="lg:grid gap-4 lg:grid-cols-6 block">
                     <div class="flex items-center col-span-4" data-aos="fade-right" data-aos-duration="2000">
                         <div>
@@ -108,7 +107,7 @@
                     </div>
                 </div>
             </section>
-            <section class="flex justify-start items-center pt-[2rem] md:pt-[11rem]" id="experience">
+            <section id="experience" class="flex justify-start items-center pt-[2rem] md:pt-[11rem]">
                 <div>
                     <div class="col-span-2 text-start">
                         <h2 class="text-4xl font-bold text-gray-800"><i class="fa-solid fa-briefcase fa-xs"></i>
@@ -118,9 +117,9 @@
                     <ol class=" overflow-hidden space-y-8 pt-5">
                         <li
                             class="relative flex-1 after:content-['']  after:w-0.5 after:h-full  after:bg-indigo-600 after:inline-block after:absolute after:-bottom-11 after:left-4 lg:after:left-5">
-                            <a class="flex items-start font-medium w-full">
+                            <div class="flex gap-1 w-full">
                                 <span
-                                    class="w-8 h-8 aspect-square bg-indigo-600 border-2 border-transparent rounded-full flex justify-center items-center mr-3 text-sm text-white lg:w-10 lg:h-10">
+                                    class="w-20 h-4 aspect-square bg-indigo-600 border-2 border-transparent rounded-full flex justify-center items-center mr-3 text-sm text-white lg:w-10 lg:h-10">
                                     3
                                 </span>
                                 <div class="block">
@@ -149,13 +148,14 @@
                                         <br>
                                     </p>
                                 </div>
-                            </a>
+                            </div>
+
                         </li>
                         <li
                             class="relative flex-1 after:content-[''] after:w-0.5 after:h-full after:bg-gray-200 after:inline-block after:absolute after:-bottom-12 after:left-4 lg:after:left-5">
-                            <a class="flex items-start font-medium w-full">
+                            <div class="flex gap-1 w-full">
                                 <span
-                                    class="w-8 h-8 aspect-square bg-indigo-50 border-2 border-indigo-600 rounded-full flex justify-center items-center mr-3 text-sm text-indigo-600 lg:w-10 lg:h-10">2</span>
+                                    class="w-20 h-4 aspect-square bg-indigo-50 border-2 border-indigo-600 rounded-full flex justify-center items-center mr-3 text-sm text-indigo-600 lg:w-10 lg:h-10">2</span>
                                 <div class="block">
                                     <h4 class="text-lg text-indigo-600 mb-2">Programador Full Stack | Sys & Net del
                                         Perú</h4>
@@ -164,34 +164,26 @@
                                     </p>
                                     <p class="text-md text-gray-600">
                                         - Desarrollo de un sistema integrado con soluciones como HOWEN para el acceso a
-                                        cámaras
-                                        de seguridad y Gurtam para rastreo GPS y registro de eventos. Este sistema
-                                        permite la
-                                        recepción y gestión de alarmas personalizables, abordando eventos como exceso de
-                                        velocidad, botón de pánico, desviación de ruta y paradas prolongadas. <br>
-                                        - Desarrollo de una plataforma SAAS multiusuario y por roles dedicada a la
-                                        gestión de
+                                        cámaras de seguridad y Gurtam para rastreo GPS y registro de eventos. Este
+                                        sistema permite la recepción y gestión de alarmas personalizables, abordando
+                                        eventos como exceso de velocidad, botón de pánico, desviación de ruta y paradas
+                                        prolongadas.<br>
+                                        - Creación de una plataforma SAAS multiusuario y por roles para la gestión de
                                         abastecimientos de combustibles, diseñada especialmente para empresas del
-                                        sector. <br>
-                                        - Implementé una plataforma SAAS de cotizaciones conectada con un sistema de
-                                        facturación,
-                                        optimizando los procesos de cotización y gestión de ventas para múltiples
-                                        usuarios con
-                                        roles definidos.<br>
-                                        - Desempeñé un rol multifacético que abarcó el desarrollo tanto del Backend como
-                                        del
-                                        Frontend, además de liderar migraciones de bases de datos y la automatización de
-                                        diversas
-                                        tareas a través de Bots.<br>
-
+                                        sector.<br>
+                                        - Implementación de una plataforma SAAS de cotizaciones conectada con un sistema
+                                        de facturación, optimizando los procesos de cotización y gestión de ventas para
+                                        múltiples usuarios con roles definidos.<br>
+                                        - Desarrollo móvil para aplicaciones de gestión y reportes, mejorando la
+                                        eficiencia y accesibilidad de las operaciones empresariales.
                                     </p>
                                 </div>
-                            </a>
+                            </div>
                         </li>
-                        <li class="relative flex-1 ">
-                            <a class="flex items-start font-medium w-full  ">
+                        <li class="relative flex-1">
+                            <div class="flex gap-1 w-full">
                                 <span
-                                    class="w-8 h-8 aspect-square bg-gray-50 border-2 relative z-10 border-gray-200 rounded-full flex justify-center items-center mr-3 text-sm  lg:w-10 lg:h-10">1</span>
+                                    class="w-20 h-4 aspect-square bg-gray-50 border-2 relative z-10 border-gray-200 rounded-full flex justify-center items-center mr-3 text-sm  lg:w-10 lg:h-10">1</span>
                                 <div class="block">
                                     <h4 class="text-lg text-gray-900 mb-2">Desarrollador web | Prestaclub </h4>
                                     <p class="text-sm text-gray-400 mb-4">
@@ -211,17 +203,180 @@
                                         contenidos gráficos.
                                     </p>
                                 </div>
-                            </a>
+                            </div>
                         </li>
                     </ol>
                 </div>
             </section>
-            <section id="proyectos" class="flex justify-center items-center pt-[4rem] md:pt-[11rem]">
+            <section id="proyects" class="flex justify-center items-center pt-[4rem] md:pt-[11rem]">
                 <div class="w-full">
                     <h2 class="text-gray-800 text-start text-4xl font-bold"><i
                             class="fa-solid fa-code-branch fa-xs"></i> Ultimos
                         proyectos</h2>
                     <div class="block w-full gap-5 pt-5">
+                        <div class="block md:grid md:grid-cols-2 gap-10 pt-8">
+                            <div>
+                                <h3 class="font-bold py-2 text-3xl text-indigo-500">Yanapay Yachacuyta</h3>
+                                <p class="text-md text-gray-600 text-justify">Aplicativo dirigido a estudiantes de
+                                    secundaria. El aplicativo tiene como objetivo ayudar a los
+                                    estudiantes a repasar los cursos según el plan de estudios proporcionado por el
+                                    Ministerio de Educación del país. <br>
+
+                                    <span class="font-bold">- Material educativo:</span> Los estudiantes pueden acceder
+                                    a material educativo
+                                    relacionado
+                                    con cada curso para repasar y reforzar sus conocimientos.<br>
+                                    <span class="font-bold"> - Simulación de exámenes:</span> Los estudiantes pueden
+                                    simular exámenes por cada módulo
+                                    para
+                                    evaluar su aprendizaje.<br>
+                                    <span class="font-bold"> - Registro y validación de profesores:</span> Los
+                                    profesores pueden registrarse en la
+                                    plataforma y su registro con el rol de profesor será validado con su inscripción en
+                                    el colegio de profesores del Perú para certificar su condición de profesor.<br>
+                                    <span class="font-bold"> - Interacción entre alumnos y profesores:</span> Los
+                                    alumnos pueden agregar dudas en cada
+                                    módulo de los cursos, las cuales pueden ser respondidas por profesores o incluso por
+                                    otros alumnos.
+                                </p>
+                            </div>
+                            <div>
+                                <div class="flex-auto gap-1 py-3 text-xs">
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Flutter
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Dart
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        GetX
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Typescript
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Nest.js
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit mt-2 md:mt-0">
+                                        JWT
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit mt-2 md:mt-0">
+                                        MySQL
+                                    </button>
+                                </div>
+                                <img id="hoverImageYanapay" src="./assets/presentation_yanapay.png"
+                                    alt="Vista de aplicativo yanapay yachacuyta"
+                                    class="rounded-xl hover:shadow-2xl transition duration-300 w-full hover-image">
+                                <div class="flex gap-1 py-3">
+                                    <a href="https://github.com/silverblade34/app_yachakuqta_yanapay"
+                                        class="py-2 text-sm md:px-3 px-2 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
+                                        target="_blank">
+                                        <i class="fa-brands fa-github md:mr-1 mr-0"></i>
+                                        Ver código frontend
+                                    </a>
+                                    <a href="https://github.com/silverblade34/api-yachakuqta-yanapay"
+                                        class="py-2 text-sm md:px-3 px-2 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
+                                        target="_blank">
+                                        <i class="fa-brands fa-github md:mr-1 mr-0"></i>
+                                        Ver código backend
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block md:grid md:grid-cols-2 gap-10 pt-8">
+                            <div>
+                                <h3 class="font-bold py-2 text-3xl text-indigo-500">Aduanas Movil</h3>
+                                <p class="text-md text-gray-600 text-justify">Aduanas Movil es una aplicación móvil
+                                    diseñada como un sistema ERP para agencias aduaneras, permitiendo gestionar
+                                    eficientemente todos los procesos de sus servicios, incluyendo indicadores de
+                                    gestión y reportes, generación de cotizaciones, y seguimiento de operaciones
+                                    aduaneras (comercial, producción, vb, operaciones, tesorería, facturación, archivo).
+                                    Migré la aplicación de Ionic 3 a Flutter, utilizando el micro-framework GetX.</p>
+                            </div>
+                            <div>
+                                <div class="flex-auto gap-1 py-3 text-xs">
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Flutter
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Dart
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        GetX
+                                    </button>
+                                </div>
+                                <img id="hoverImageAduanas" src="./assets/presentation_aduanas.png"
+                                    alt="Vista de aplciativos Aduanas"
+                                    class="rounded-xl hover:shadow-2xl transition duration-300 w-full">
+                                <div class="flex gap-1 py-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block md:grid md:grid-cols-2 gap-10 pt-8">
+                            <div>
+                                <h3 class="font-bold py-2 text-3xl text-indigo-500">CITV</h3>
+                                <p class="text-md text-gray-600 text-justify">Aplicativo movil para el control y acceso
+                                    a reportes
+                                    en tiempo real de las plantas de revisiones tecnicas, esto va sincronizado con la
+                                    base de datos de los servidores de cada planta. Desarrollé el aplicativo con Flutter
+                                    usando el micro-framework GetX
+                                    y el Backend con Nest.js.
+                                </p>
+                            </div>
+                            <div>
+                                <div class="flex-auto gap-1 py-3 text-xs">
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Flutter
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Dart
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        GetX
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Typescript
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
+                                        Nest.js
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit mt-2 md:mt-0">
+                                        JWT
+                                    </button>
+                                    <button
+                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit mt-2 md:mt-0">
+                                        MySQL
+                                    </button>
+                                </div>
+                                <img id="hoverImageCitv" src="./assets/presentation_citvs.png"
+                                    alt="Vista de plataforma CITV"
+                                    class="rounded-xl hover:shadow-2xl transition duration-300 w-full hover-image">
+                                <div class="flex gap-1 py-3">
+                                    <a href="https://github.com/silverblade34/app_mobile_citvs"
+                                        class="py-2 text-sm md:px-3 px-2 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
+                                        target="_blank">
+                                        <i class="fa-brands fa-github md:mr-1 mr-0"></i>
+                                        Ver código fuente
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="block md:grid md:grid-cols-2 gap-10">
                             <div>
                                 <h3 class="font-bold py-2 text-3xl text-indigo-500">Monitor S4</h3>
@@ -251,7 +406,7 @@
                                     </button>
                                 </div>
                                 <img src="./assets/presentation_monitors4.png" alt="Vista de plataforma MonitorS4"
-                                    class="rounded-xl hover:shadow-xl transition duration-300 w-full">
+                                    class="rounded-xl hover:shadow-2xl transition duration-300 w-full">
                                 <div class="flex gap-1 py-3">
                                     <a href="https://github.com/silverblade34/platform_monitors4"
                                         class="py-2 text-sm md:px-3 px-2 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
@@ -317,7 +472,7 @@
                                     </button>
                                 </div>
                                 <img src="./assets/presentation_quotefast.png" alt="Vista de plataforma QuoteFast"
-                                    class="rounded-xl hover:shadow-xl transition duration-300 w-full">
+                                    class="rounded-xl hover:shadow-2xl transition duration-300 w-full">
                                 <div class="flex gap-1 py-3">
                                     <a href="http://204.48.17.106:3050/login"
                                         class="py-2 text-sm md:px-3 px-2 bg-blue-600 hover:bg-blue-700 transition bg duration-300 text-white rounded-full max-w-fit col-span-3 md:col-span-1"
@@ -363,7 +518,7 @@
                                     </button>
                                 </div>
                                 <img src="./assets/presentation_efuel.png" alt="Vista de plataforma EFUEL"
-                                    class="rounded-xl hover:shadow-xl transition duration-300 w-full">
+                                    class="rounded-xl hover:shadow-2xl transition duration-300 w-full">
                                 <div class="flex gap-1 py-3 items-center">
                                     <a href="https://gitlab.com/prueba807/petrothor_web_v2"
                                         class="py-2 text-sm md:px-3 px-2 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
@@ -377,89 +532,6 @@
                                         <i class="fa-solid fa-globe mr-1"></i>
                                         Ir al sitio web
                                     </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block md:grid md:grid-cols-2 gap-10 pt-8">
-                            <div>
-                                <h3 class="font-bold py-2 text-3xl text-indigo-500">CITV</h3>
-                                <p class="text-md text-gray-600 text-justify">Aplicativo movil para la vista de reportes
-                                    en tiempo real de las plantas de revisiones tecnicas de un usuario esta conectado a
-                                    sus servidores. Desarrollé el aplicativo con Flutter usando el micro-framework GetX
-                                    y el Backend con Nest.js
-                                </p>
-                            </div>
-                            <div>
-                                <div class="flex-auto gap-1 py-3 text-xs">
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Flutter
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Dart
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        GetX
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Typescript
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Nest.js
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit mt-2 md:mt-0">
-                                        JWT
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit mt-2 md:mt-0">
-                                        MySQL
-                                    </button>
-                                </div>
-                                <img src="./assets/presentation_citvs.png" alt="Vista de plataforma CITV"
-                                    class="rounded-xl hover:shadow-xl transition duration-300 w-full">
-                                <div class="flex gap-1 py-3">
-                                    <a href="https://github.com/silverblade34/app_mobile_citvs"
-                                        class="py-2 text-sm md:px-3 px-2 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit"
-                                        target="_blank">
-                                        <i class="fa-brands fa-github md:mr-1 mr-0"></i>
-                                        Ver código fuente
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block md:grid md:grid-cols-2 gap-10 pt-8">
-                            <div>
-                                <h3 class="font-bold py-2 text-3xl text-indigo-500">Aduanas Movil</h3>
-                                <p class="text-md text-gray-600 text-justify">Aduanas Movil es una aplicación móvil
-                                    diseñada como un sistema ERP para agencias aduaneras, permitiendo gestionar
-                                    eficientemente todos los procesos de sus servicios, incluyendo indicadores de
-                                    gestión y reportes, generación de cotizaciones, y seguimiento de operaciones
-                                    aduaneras (comercial, producción, vb, operaciones, tesorería, facturación, archivo).
-                                    Migré la aplicación de Ionic 3 a Flutter, utilizando el micro-framework GetX.</p>
-                            </div>
-                            <div>
-                                <div class="flex-auto gap-1 py-3 text-xs">
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Flutter
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        Dart
-                                    </button>
-                                    <button
-                                        class="px-3 py-2 bg-indigo-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full max-w-fit">
-                                        GetX
-                                    </button>
-                                </div>
-                                <img src="./assets/presentation_aduanas.png" alt="Vista de plataforma CITV"
-                                    class="rounded-xl hover:shadow-xl transition duration-300 w-full">
-                                <div class="flex gap-1 py-3">
                                 </div>
                             </div>
                         </div>
@@ -479,7 +551,7 @@
                                 por la
                                 programación y la innovación tecnológica.
                                 <span class="text-indigo-800 dark:text-indigo-500">
-                                    Tengo 2 años de experiencia trabajando en
+                                    Tengo 3 años de experiencia trabajando en
                                     proyectos de alto impacto y calidad,
                                 </span>
                                 como sistemas ERP personalizados para la gestión
@@ -492,7 +564,14 @@
                                 <span class="text-sky-800 dark:text-sky-500">
                                     talento y versatilidad como desarrollador web y móvil.
                                 </span>
+                                <br> <br>
+                                Tengo un enfoque especial en dar soluciones a la educación mediante aplicativos. Me
+                                gusta
+                                el desarrollo móvil y creo firmemente en el poder de la tecnología para mejorar el
+                                acceso y
+                                la calidad de la educación.
                             </p>
+
                             <a href="./assets/CV_MARCOS_ABRIL.pdf" target="_blank"
                                 class="max-h-12 py-3 px-4 mt-5 bg-gray-800 hover:bg-indigo-900 transition bg duration-300 text-white rounded-full text-xs md:text-sm">Descargar
                                 CV
@@ -506,186 +585,7 @@
                     </div>
                 </div>
             </section>
-            <section id="skills" class="flex justify-center items-center pt-[2rem] md:pt-[11rem]">
-                <div class="w-full">
-                    <h2 class="text-gray-800 text-4xl font-bold pb-5 text-start"><i
-                            class="fa-solid fa-microchip fa-xs"></i> Tecnologías usadas</h2>
-                    <div
-                        class="item bg-indigo-500 flex items-center justify-between rounded-lg py-4 px-6 w-full mt-5 text-white">
-                        <p>Frontend developer</p>
-                    </div>
-                    <div class="grid lg:grid-cols-5 p-3 grid-cols-3 gap-1 bg-gray-200 rounded-lg mt-3 text-sm">
-                        <div data-aos="fade-down-right"
-                            class="icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <i class="fa-brands fa-html5 text-lg mr-2"></i>
-                            <p>HTML</p>
-                        </div>
-                        <div data-aos="fade-down-right"
-                            class="icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <i class="fa-brands fa-css3-alt mr-2"></i>
-                            <p>CSS</p>
-                        </div>
-                        <div data-aos="fade-down-right"
-                            class="w-full icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <i class="fa-brands fa-square-js mr-2"></i>
-                            <p>Javascript</p>
-                        </div>
-                        <div data-aos="fade-down-right"
-                            class="w-full icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);">
-                                <path
-                                    d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z">
-                                </path>
-                            </svg>
-                            <p>Tailwind</p>
-                        </div>
-
-                        <div data-aos="fade-down-right"
-                            class="w-full icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <i class="fa-brands fa-bootstrap mr-2"></i>
-                            <p>Bootstrap</p>
-                        </div>
-                        <div data-aos="fade-down-right"
-                            class="w-full icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <i class="fa-brands fa-sass mr-2"></i>
-                            <p>Sass</p>
-                        </div>
-                        <div data-aos="fade-down-right"
-                            class="w-full icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <i class="fa-brands fa-vuejs mr-2"></i>
-                            <p>Vue.js</p>
-                        </div>
-                        <div data-aos="fade-down-right"
-                            class="w-full icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <i class="fa-brands fa-react mr-2"></i>
-                            <p>React</p>
-                        </div>
-                    </div>
-                    <div
-                        class="item bg-indigo-500 flex items-center justify-between rounded-lg py-4 px-6 w-full mt-5 text-white">
-                        <p>Backend developer</p>
-                    </div>
-                    <div class="grid lg:grid-cols-5  grid-cols-3 p-3 gap-1 bg-gray-200 rounded-lg mt-3 text-sm">
-                        <div data-aos="fade-down-left"
-                            class="icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <i class="fa-brands fa-python mr-2"></i>
-                            <p>Python</p>
-                        </div>
-                        <div data-aos="fade-down-left"
-                            class="icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);">
-                                <path
-                                    d="M13.78 18.29c0 .12.15 0 0 0zm-3.35-2.7c.39.17-.31-.6 0 0zm-5.03.28c.15.26 0-.12 0 0zm5.6.39c-.27-.42-.2.06 0 .32.48.47.18-.26 0-.32z">
-                                </path>
-                                <path
-                                    d="M20.24 19.06c-.53.63-1-.07-1.63.13-1.1 0 .09-.5.06-1-.58-.45-1.24.61-1.62.9a10.75 10.75 0 0 1-2.67-.83 8 8 0 0 1-2.6-1.94 8.36 8.36 0 0 1-1.87-2.84 21.36 21.36 0 0 1-.84-5.74c.07-1.3 1.44.14 2-.33-.21-.67-1.29-.88-1.89-1.16-.58 0-.79-.55-1.4-.59 0-.73-1.13-.33-1.56-.84.42-1.08-1.37 0-1.23-.91.58-1.2-1.78-1-.8.06.95.54-.93.93-.38 1.29a.59.59 0 0 1-.53.86c-.74.07-.67 1.09.06.55.81-.25.14.11-.25.18a1.3 1.3 0 0 0-.95 1.9 35.32 35.32 0 0 1 1 3.42A16.25 16.25 0 0 0 5.84 17 9.78 9.78 0 0 0 8 19a9.89 9.89 0 0 0 2.43 1.22 18 18 0 0 0 4.73.73 16.53 16.53 0 0 0 2.9-.24c.87.09 1.49-.65 2.26-.26.48-.42 1.16-.23 1.63-.54.32-1.22-1.22-.27-1.71-.85zm-1.74-.74c-.22 0 .05-.34 0 0zm-7.63-11c-.1 0-.08-.12-.16-.15-.8-.37.39-.23.16.19zm6.76 11.39c-.35-.08.28-.25 0 0zm-2.81.11c-.23 0 .18-.14 0 0zm-1.88-1.18c-.13 0 0-.13 0 0zm-.22-.17c-.36 0-.09-.23 0 0zm-.42-.36c-.33.08 0-.34 0 0zm-6-11.66c-.53-.28.11.33-.34.32-.24 0-.69-.52-.54-.78.3.16.83.21.92.5zm-.92-.81h-.11c-.03-.27.87-.06.15.04zm-1.02-.79c-.42-.19 0-.93.44-.58.51.73-.95-.08-.44.58zm.49.69c-.27.11.16-.21 0 0zm.48.92c.6.46-.34 0-.72.29-.61.06.66-.34.72-.29zm.17.6c.35 0 1.88-.69 1.37-.07.47.55.1.37-.21 0 .28.19.06 1-.37.45s-.5-.18-.17.21C5.8 6 4.88 6.28 4.21 6.5c-.43-.04 1.13-.37 1.29-.44zM3.58 7.51c-.16.4.24.53.62.6.62-.17-.41-.28.06-.44.26 0-.82-.26.08-.38S6.09 6.77 7 6.58a8.71 8.71 0 0 1 2.35-.19c.3.35-.23.94-.77 1a8.61 8.61 0 0 1-2 .39c-.8-.1-1.37.61-2.19.7.22-.4-.18-.14-.59-.16.21.82-1.47-.21-.48-.41-.74-.26-.75.52-.67 1-.65-.91.07-1.29.93-1.4zm1.88 1.08c-.22-.05.17-.2 0 0zm-.72.88s-.34-.08-.2-.17c1 .13-.9-.33.13-.22.66-.02.44.36.07.39zm.33.17c-.12.12 0-.24 0 0zm-.71 0c-.44-.09.21-.22 0 0zm-.06 1.43c-.07.1-.1-.08 0 0zM4 10.9c-.55-.19 0-.21 0 0zm-.12 1.28c-.26-.09-.25-.5-.37-.72-.38-1.03.41.4.33.72zm.23-1.49c-.69-.08-.05-.49 0 0zm0-.34h-.09c-.76-.35.45-.17-.02 0zM4 9.56c-.61-.31.58-.36 0 0zm.21.26c-.34.06.05-.32 0 0zm-1.3.07c-.12.08 0-.23 0 0zM3 9.75c-.16 0 0-.27 0 0zm.08-1c-.4-.1.33-.25 0 0zm.26 2c-.44-.1-.12-.65 0 0zm.3 1.25c.42.51.26.79.69 1.41-.56-.35-.67-1.2-1-1.75-.41-.9.23-.01.31.34zm4.09 6.38c-.34-.07-.57-.43-.81-.66a4.88 4.88 0 0 1-1.57-1.94 12.26 12.26 0 0 1-1.46-2.38c-.41-.92.25.07.35.42.21.68.88 1.07.94 1.52.74.42.36 1.12 1 1.31.27-.14.3.84.89.64-.33.15.13.33.3.61.35-.05 1.17.82.36.52zM4.62 12c-.31-.07.33-.11 0 0zm.2.47c-.55-.14.52-.2 0 0zm1.39.47c.4-.17.16.78.55.9.76 1-.53 0-1-.07.06 0-.38-.12-.19-.16-.14-.15-.45-.66.26-.32.6.24.65.06.38-.39zm1.31 1.76c0 .15-.72.13-.06.42-.38 0-.5 0 0 .3-.22.17.43.31.21.57.66.52-.12.13-.4-.08s-.85-.35-.75-.5c.81.42.21 0-.15-.3.65.16-.51-.48.1-.31.19.05-.27-.38.33-.07-.54-.52.47-.12.72-.07zm.48-.17c-.61-.14 0-.34 0 0zm-.17 2c-.61-.26.39 0 0 0zm-.45-.17c-.71-.23.52 0 0 0zm-.09.11c-.22 0 0-.17 0 0zm-1.08-1.55c-.72-.3-.2-.33 0 0zm-.54-.35c-.58-.33-.08-.33 0 0zm0 .65c-.57-.44-.07-.25 0 0zm-.15-1.34c-.35 0 .13-.2 0 0zM8 17.38c-.51-.15 0-.14 0 0zM7.63 17h-.16c-.68-.54.31-.38.75-.14.97.14-.22.39-.59.14zm2.7 1.65c-.68-.16.16-.27 0 0zm-.17-.52c-.05 0-.1-.11 0 0zm-.86-1.34c-.59-.14.21-.19.36 0 1.02.21-.06.26-.36 0zM9.51 18H9.4l-.13-.06c-.56-.59 1.19.28.24.06zm-.28.69c-.15.06 0-.14 0 0zm.29-1.19-.16-.05c-.66-.45.84.09.16 0zm.16 1.72c-.4-.16.26-.25 0 0zm.1-.74c-.58-.14.36-.13 0 0zm.13-.61c-.44-.06.05-.21 0 0zm-.72-.88c.46.06.47.27 0 .14-.09 0-.24 0-.28-.17-.76-.5.03-.25.28-.02zm-.06 2c-.2.12 0-.22 0 0zm-.31-.51c-.53 0 .4-.26 0 0zm-.12.35c-.26-.1.17-.08 0 0zm.3-.89c-.52-.14.25-.18 0 0zm-.16-.57c-.28 0-.06-.16 0 0zm-.54-.95c-.57-.46 1.18.38 0 0zm-.06.19c0 .06-.11-.09 0 0zm3.65 3.78a9.4 9.4 0 0 1-2.56-.85l-.33-.2c-.57-.31-.5-.38.06-.07.19.16 1.59.73.93.35-.29-.07-1.9-.95-.84-.57a20.92 20.92 0 0 0 2.74 1.21 7.14 7.14 0 0 0 2.43.15c.65.33 1.33-.08 2 .21a13.05 13.05 0 0 1-4.45-.23zm-1.25-.7c-.51-.09.16-.23 0 0zm.73-1c-.58-.11.6-.23 0 0zm.84 1.31c1 .37-.6.12-.93-.09-.92-.38.72.09.93.09zm-1.06-1.1c-.81-.12.9 0 0 0zm1.52.85c-.29.23 0-.3 0 0zm.29.05c-.15.06 0-.17 0 0zm.27-.38c-.16.2 0-.23 0 0zm.31 0c-.45.17.47-.39 0 0zm.14 0c.49-.42.51-.22.5.13-.43.48-.17-.2-.44.06s-.19-.1-.06-.17zm.83.45c-.5 0 .51-.54 0 0zm0 .18c-.2.05 0-.13 0 0zm-.16-.35c-.39-.26.94-.61 0 0zm.57.09h-.08c-.03-.23.54-.27.08.02zm.15.19c-.3-.08.47-.4 0 0zm.36-.1c-.51.18.48-.4 0 0zm.22.11-.12.08c-.23-.14.71-.48.12-.07zm-.43-.53c-.54-.18-1.4-.76-2-.37-.8.51.41-.56-.24-.08-.66.79-.45-.5-1.09-.11 0-.12-.57-.16-.17-.37-.36 0-.13-.05 0-.34-.16 0-1 0-1.36-.29-.4-.52.07-.3.48-.23-.67.12.24.5.68.29-.2-.09-.43-.52-1-.9a18.83 18.83 0 0 0-2.13-1c-.84-.5.18-.18.47.08.84.37.51-.51 0-.74-.54 0-.67-.59-1.1-.56.67.11 1.14-.17.39-.85s.3.63-.11.44c-.19-.25-.05-.6-.65-.73 0 .23-.08.58-.21.1-.17 0-.36.21-.5-.28.13-.57-.56-.7-.67-1.06.6.38.87.08.45-.33s-.33-.11-.49 0c-.59.6-.06-1-.32-.56-.26 0-.11.29-.1.65-.86-.21.2.45.45.81-.39-.4-.32.31-.65 0-.11-.3-.12-.77-.67-.85.62-.22-.36-.65-.28-.67.35-.32.4-.76.82-.07-.53 0 0 .88.12.6 0-.47.22-1-.59-1.19-.24.32-.65-.63-.18-.43-.06-.63.74-.26.69-.53.42-.18-.5-.77 0-1 .38.24 1.36-.36.7-.44.42 0 .75.18.79-.24.33.07 1.24.36.42-.09a3.45 3.45 0 0 1 1.13-.25c.79-.61.63 1 .45 1.45.3-.21.24.94.14 1.37.16-.22.23.36 0 .77 0-.07.4-.13.12.35-.22-.47-.31 1-.17.32.37-.61.28 0 .39.24.08.55.32 1.06.4 1.56.35.35-.15.11-.15.59.11-.14.58.19.57.68 0-.78.09-.18.47 0a5.48 5.48 0 0 0 1 1.42c.37.43 0 .13.14.39a3.19 3.19 0 0 0 2.09 1.28 1.46 1.46 0 0 0 1.57.7c-.6.37 1.68.47.91.67-.23.16-.62-.2-1.01-.18zM8.7 15.89c-.24 0 0-.2 0 0zm.38.22c-.18 0-.12-.24 0 0zm-2.61-3.65c-.24-.07.1-.09 0 0zm-.59 0c-.26 0 0-.34 0 0zm-.3-.08c-.1.05 0-.11 0 0zm11 8.25c-.39-.07.32-.22 0 0zm.73-1.05h-.3c.06-.45 1.33-.1 1.85-.09-.16.34-1.13.04-1.55.13zm2 0c-.27 0 .12-.32 0 0zm1-.09c-.25.13 0-.3 0 0zm.48.11c-.52-.12.24-.12.4-.14.94.02 0 .16-.47.16z">
-                                </path>
-                                <path
-                                    d="M6.51 7.11c1-.2-.38-.33-.69 0 .18.13.41-.21.69 0zm-.82.13c0 .19.18-.22 0 0zm2.62-.48c.67-.11.11-.41-.09.1.07.14.11-.05.09-.1zm-.62.1c.93.36-.05-1 0 0zm-2.92.93a.51.51 0 0 1 .33.1c.75.52-.1-.84-.33-.1z">
-                                </path>
-                                <path
-                                    d="M4.81 7.43c.16.13.29-.21 0 0zm.37.01.14.12c.68.06-.11-.46-.14-.12zM10.69 16c.09.3 0-.39 0 0zm-4.78-5c.1.18.18-.18 0 0zm.09.61c.19.34 0-.51 0 0zm.21-.49c.33.21-.28-.52 0 0zm-.41-.82c.07.15.24.16.37.2 1.32.61-.95-1-.37-.2zm.54 1.43c.31.53.18-.37 0 0zm.48-.16c.37.92-.23-.12-.3-.43a2.11 2.11 0 0 0 .28 1c.34.51.19-.28.55.23-.2-.45.1-.2.06-.4s-1-1.17-.59-.4zm.36 1.78c.09.31.18 0 0 0zM5.85 9c.06.14.11 0 0 0zm.67.42c.32.41.17-.36 0 0zm-.89 1.14.14.15c.99.29-1.05-.95-.14-.15zm.7-.37c1 .41-.09-.27-.44-.2.11.13.32.07.44.2zm-.18-.44c.18.18.82.51.31.06.32-.06 0-.16-.24-.32-.44-.67.07.06-.07.26z">
-                                </path>
-                                <path
-                                    d="M5.51 10.64c-.53-.44.16.21-.06.2-.55-.4-.32-.11 0 .2.33.5.6-.3.06-.4zm2.14.64c.12.11-.06-.68 0 0zm1.02-3.5c0 .12.07-.1 0 0zM9 12.47c0 .21 0-.18 0 0zm-.29-1.22c.08.46.1-.78 0 0zm.14.22v.1c.21-.51.04-.79 0-.1zm-.1-2.7c-.14.7-.27.41-.08-.11-.05-.67-.45.41-.27.72.29.47.6-1.16.35-.61zm1.01 5.98c.13.35.11-.42 0 0zm-1.35-4.28c0 .2 0-.14 0 0zm.64 1.7c0 .26.11-.38 0 0zM9.5 14l.07.11c.14-.49-.36-.79-.07-.11zm-1.56-.52c.27.22-.13-.23 0 0zm1.23-.85c.08.29 0-.42 0 0zM8.14 9.81c.15.33-.05-.27 0 0z">
-                                </path>
-                                <path
-                                    d="M8.3 10.23c.24.34-.26-.64 0 0zm-.06 1.15c-.13-1-.42.45 0 .69.13.34.25.2.3-.19-.32 0 .08-.62-.3-.5z">
-                                </path>
-                            </svg>
-                            <p>Flask</p>
-                        </div>
-                        <div data-aos="fade-down-left"
-                            class="icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <i class="fa-brands fa-node mr-2"></i>
-                            <p>Node.js</p>
-                        </div>
-                        <div data-aos="fade-down-left"
-                            class="icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.933 16.933" width="24"
-                                height="24" viewBox="0 0 24 24" style="fill: #ffffff;">
-                                <path
-                                    d="M9.97.033c-.122 0-.236.026-.34.06.223.15.345.345.407.568.004.03.013.052.017.083s.01.052.01.08c.018.385-.1.433-.184.66-.127.293-.092.608.06.86a.52.52 0 0 0 .052.096c-.166-1.106.757-1.273.927-1.618.013-.302-.236-.503-.433-.643-.188-.114-.36-.15-.516-.15zm1.39.25c-.018.1-.004.074-.01.127l-.01.114-.03.105c-.01.035-.022.07-.035.105l-.048.1c-.013.018-.022.035-.035.052l-.026.04-.066.087c-.026.026-.048.057-.08.08s-.052.052-.083.074c-.092.07-.197.122-.293.188-.03.022-.06.04-.087.066a.64.64 0 0 0-.083.07c-.03.026-.052.052-.08.083s-.048.057-.066.087l-.06.092-.048.1-.035.1-.03.11c-.004.018-.004.04-.01.057s-.004.035-.01.052l-.004.11c0 .026 0 .052.004.08 0 .035.004.07.013.11s.013.07.022.105l.035.105c.01.022.022.044.03.06l-1.006-.39-.507-.13-.276-.066a8.12 8.12 0 0 0-.796-.118c-.01 0-.013-.004-.022-.004l-.783-.04-.573.022c-.267.018-.534.052-.8.096l-.197.035-.394.087-.197.052-.188.083-.144.066c-.01.004-.018.004-.022.01l-.122.06c-.013.004-.022.01-.03.013l-.136.07c-.03.013-.06.03-.087.044-.013.01-.03.017-.04.022l-.114.066a1.1 1.1 0 0 0-.105.066l-.087.06-.096.07-.074.06c-.01.004-.018.013-.026.018l-.066.057c-.004.01-.013.013-.018.018l-.08.074-.087.083-.074.08c-.01.01-.022.018-.03.026a1.23 1.23 0 0 1-.074.079c-.004.01-.013.013-.018.022l-.1.105-.236.227c-.08.07-.162.136-.245.192l-.262.166c-.087.048-.18.092-.276.13a3.15 3.15 0 0 1-.284.105c-.184.04-.372.114-.534.127-.035 0-.074.01-.11.013l-.11.026-.105.04a1.12 1.12 0 0 0-.105.048c-.03.022-.066.04-.096.06s-.06.048-.087.074-.06.052-.087.08l-.074.087c-.022.035-.048.066-.066.1a.77.77 0 0 0-.061.101l-.048.114-.04.114-.022.105c-.013.052-.013.105-.018.13S0 5.635 0 5.666a.25.25 0 0 0 .004.057c.004.03.01.057.018.083l.03.08c.013.03.03.057.048.083l.057.08.074.07a.64.64 0 0 0 .083.07c.105.092.13.122.267.192.022.013.044.022.07.035.013.013.013.017.018.026.004.035.013.07.022.105a.59.59 0 0 0 .035.105l.035.08c.004.01.01.018.013.022l.052.096.066.092.074.083c.026.026.052.048.083.074l.087.066c.03.022.06.04.096.057a.71.71 0 0 0 .101.048c.026.013.057.022.087.03s.057.018.074.022c-.013.236-.018.46.018.538.04.087.232-.18.424-.485-.026.302-.044.656 0 .76s.31-.232.538-.608c3.1-.717 5.93 1.426 6.227 4.452-.057-.472-.638-.735-.905-.67-.13.324-.354.74-.713.997.03-.29.017-.586-.044-.875a2.83 2.83 0 0 1-.542 1.102c-.415.03-.83-.17-1.05-.472-.018-.013-.022-.04-.035-.057l-.035-.092c-.013-.03-.022-.06-.026-.092s-.004-.06-.004-.096v-.066c.004-.03.013-.06.022-.092l.03-.092c.018-.03.03-.06.052-.092.074-.2.074-.38-.06-.48-.026-.018-.052-.03-.083-.044-.018-.004-.04-.013-.057-.018l-.035-.013-.092-.022a.33.33 0 0 0-.092-.013.71.71 0 0 0-.096-.009c-.022 0-.044.004-.066.004a.34.34 0 0 0-.096.013l-.092.017-.092.03-.087.04-.083.044c-1.02.665-.41 2.22.284 2.672-.262.048-.53.105-.603.162.18.122.376.22.582.302l.708.2c.363.08.73.105 1.102.083a4.16 4.16 0 0 0 3.813-3.551l.026.114.04.245.018.118.01.13.01.144v.07c0 .022.004.048.004.07s-.004.052-.004.08v.06c0 .03-.004.057-.004.087 0 .017 0 .035-.004.057l-.004.096c-.004.013-.004.026-.004.04l-.013.1c0 .013 0 .026-.004.04l-.017.127v.01l-.026.122-.026.13-.035.136-.035.136-.044.14-.096.254-.052.127-.06.122c-.004.013-.01.022-.013.03-.293.586-.713 1.09-1.238 1.482-.035.022-.07.048-.105.074-.01.01-.022.013-.03.022l-.096.066.013.026h.004l.184-.026h.004l.34-.06c.03-.004.066-.013.096-.022l.06-.013.092-.017.08-.022c.437-.105.86-.25 1.268-.42-.695.95-1.627 1.714-2.716 2.217.503-.035 1.006-.118 1.49-.258 1.762-.52 3.245-1.705 4.133-3.302a6.98 6.98 0 0 1-1.176 2.812c.424-.28.813-.603 1.168-.97a6.93 6.93 0 0 0 1.841-3.717c.15.69.192 1.404.127 2.108 3.157-4.404.262-8.97-.95-10.172-.004-.01-.01-.013-.01-.022-.01.052-.013.105-.017.157-.013.1-.026.197-.044.293s-.048.192-.074.29-.066.188-.105.28-.083.18-.13.267a2.98 2.98 0 0 1-.157.249c-.057.083-.118.162-.18.236a3.27 3.27 0 0 1-.206.219c-.044.04-.083.074-.127.11l-.1.087a2.44 2.44 0 0 1-.245.171 3.03 3.03 0 0 1-.258.149c-.092.044-.184.083-.276.122a3.08 3.08 0 0 1-.284.092c-.096.026-.197.048-.293.066s-.2.026-.297.035c-.07.004-.14.01-.2.01-.1 0-.2-.01-.297-.018s-.2-.022-.298-.044a2.21 2.21 0 0 1-.293-.074h-.004c.096-.01.192-.018.29-.035s.197-.04.293-.066.192-.057.284-.092.188-.08.276-.122a3.06 3.06 0 0 0 .262-.144c.083-.057.166-.114.245-.175a2.39 2.39 0 0 0 .223-.197c.074-.066.14-.14.206-.214s.127-.157.184-.236c.01-.013.018-.03.026-.044l.127-.2c.048-.087.092-.175.13-.267s.074-.184.105-.28.052-.188.074-.284.035-.197.044-.293.017-.2.017-.297c0-.07-.004-.14-.01-.2-.01-.1-.022-.197-.035-.293a3.2 3.2 0 0 0-.066-.293c-.03-.092-.06-.188-.096-.28s-.08-.184-.122-.27-.096-.175-.15-.258-.114-.162-.175-.24l-.2-.223a2.73 2.73 0 0 0-.114-.109 8.05 8.05 0 0 0-.608-.429c-.03-.017-.057-.03-.087-.044-.144-.092-.28-.14-.415-.184z"
-                                    fill="#ffffff" fill-rule="evenodd" />
-                            </svg>
-                            <p>Nest.js</p>
-                        </div>
-                        <div data-aos="fade-down-left"
-                            class="icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);">
-                                <path
-                                    d="M13.74 4.23c-.84-1-1.57-2-1.71-2.22H12c-.14.21-.87 1.22-1.71 2.22-7.2 9.19 1.14 15.39 1.14 15.39l.07.05c.06.95.22 2.33.22 2.33h.62s.15-1.37.21-2.33l.07-.06s8.32-6.19 1.12-15.38zM12 19.48a3.48 3.48 0 0 1-.48-.48L12 9l.45 10a3.57 3.57 0 0 1-.45.48z">
-                                </path>
-                            </svg>
-                            <p>Mongodb</p>
-                        </div>
-                        <div data-aos="fade-down-left"
-                            class="icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
-                                viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);">
-                                <path
-                                    d="M 3.125 1 C 2.219 1 1.5030625 1.4805 1.1640625 2.3125 C 1.0570625 2.5695 1.0029531 2.8420469 1.0019531 3.1230469 C 1.0009531 4.0540469 1.6009375 4.8097188 1.9609375 5.2617188 C 2.0239375 5.3407187 2.080625 5.4110938 2.140625 5.4960938 L 2.3027344 5.7109375 C 2.4637344 5.9219375 2.6470781 6.16125 2.7050781 6.28125 C 2.7240781 6.33625 2.7492031 6.4326875 2.7832031 6.5546875 C 2.9402031 7.1196875 3.2332187 8.16975 3.6992188 8.96875 C 3.8872187 9.29075 4.1517969 9.6954687 4.3417969 9.9804688 C 4.2147969 10.616469 4 11.788 4 12.5 C 4 13.75 4.2592188 14.753875 4.8242188 15.671875 C 5.0332187 15.999875 5.671 17 6.75 17 C 7.133 17 7.7694062 16.850391 7.9414062 15.900391 C 8.7064063 16.887391 10 18.125 12 19 C 12 19 8.2507969 14.625438 7.5917969 11.898438 C 7.5917969 11.898437 6.874625 12.625375 6.265625 14.109375 C 6.083625 13.651375 6 13.135 6 12.5 C 6 11.873 6.2758125 10.471375 6.3828125 9.984375 L 6.4765625 9.5605469 L 6.2304688 9.203125 C 6.2264687 9.196125 5.7227344 8.4688906 5.4277344 7.9628906 C 5.0917344 7.3868906 4.8439375 6.4955781 4.7109375 6.0175781 C 4.6459375 5.7845781 4.594875 5.6159531 4.546875 5.5019531 C 4.371875 5.1229531 4.115625 4.7900937 3.890625 4.4960938 L 3.765625 4.3300781 C 3.702625 4.2390781 3.6193906 4.133625 3.5253906 4.015625 C 3.3423906 3.785625 3.0017188 3.3570312 3.0117188 3.0820312 L 3.1230469 3.0039062 L 3.125 3 C 3.92 3 4.9440781 3.5643437 5.3300781 3.7773438 C 5.4560781 3.8463438 5.5486563 3.8940156 5.5976562 3.9160156 L 5.7714844 3.9921875 L 6.1132812 4.0039062 C 6.5602813 4.0139062 7.9189063 4.0456875 8.8789062 4.4296875 C 10.629906 5.1296875 11.598031 5.830375 12.582031 7.109375 C 14.906031 10.131375 15.763484 14.044984 15.771484 14.083984 L 15.896484 14.648438 L 16.443359 14.826172 C 16.462359 14.833172 17.992922 15.344641 19.419922 16.681641 C 17.624922 17.125641 17 18 17 18 C 17 18 17.476 18.928 19.75 20.375 C 21.125 21.25 21.875 21.875 23 23 C 23 23 21.875688 20.499813 20.304688 18.507812 C 21.500687 18.124813 22.970703 17.925781 22.970703 17.925781 L 22.060547 16.664062 C 20.562547 14.587063 18.553656 13.538859 17.597656 13.130859 C 17.265656 11.864859 16.262969 8.614625 14.167969 5.890625 C 12.968969 4.331625 11.693094 3.3993125 9.6210938 2.5703125 C 8.3940937 2.0803125 6.9187188 2.0218594 6.2617188 2.0058594 C 5.6867187 1.6898594 4.409 1 3.125 1 z M 7.1875 5 C 7.1875 5 6.75 5 6.25 5.125 L 7.625 6.9980469 C 8 6.5000469 8 5.9179688 8 5.9179688 C 8 5.9179688 7.7505 5.25 7.1875 5 z">
-                                </path>
-                            </svg>
-                            <p>MySql</p>
-                        </div>
-                        <div data-aos="fade-down-left"
-                            class="icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <i class="fa-brands fa-java mr-2"></i>
-                            <p>Java</p>
-                        </div>
-                        <div data-aos="fade-down-left"
-                            class="icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);">
-                                <path
-                                    d="M20.205 16.392c-2.469 3.289-7.741 2.179-11.122 2.338 0 0-.599.034-1.201.133 0 0 .228-.097.519-.198 2.374-.821 3.496-.986 4.939-1.727 2.71-1.388 5.408-4.413 5.957-7.555-1.032 3.022-4.17 5.623-7.027 6.679-1.955.722-5.492 1.424-5.493 1.424a5.28 5.28 0 0 1-.143-.076c-2.405-1.17-2.475-6.38 1.894-8.059 1.916-.736 3.747-.332 5.818-.825 2.208-.525 4.766-2.18 5.805-4.344 1.165 3.458 2.565 8.866.054 12.21zm.042-13.28a9.212 9.212 0 0 1-1.065 1.89 9.982 9.982 0 0 0-7.167-3.031C6.492 1.971 2 6.463 2 11.985a9.983 9.983 0 0 0 3.205 7.334l.22.194a.856.856 0 1 1 .001.001l.149.132A9.96 9.96 0 0 0 12.015 22c5.278 0 9.613-4.108 9.984-9.292.274-2.539-.476-5.763-1.752-9.596">
-                                </path>
-                            </svg>
-                            <p>SpringBoot</p>
-                        </div>
-                    </div>
-                    <div
-                        class="item bg-indigo-500 flex items-center justify-between rounded-lg py-4 px-6 w-full mt-5 text-white">
-                        <p>Otras Tecnologías</p>
-                    </div>
-                    <div class="grid lg:grid-cols-5  grid-cols-3 p-3 gap-1 bg-gray-200 rounded-lg mt-3 text-sm">
-                        <div data-aos="fade-down-right"
-                            class="icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <i class="fa-brands fa-docker mr-2"></i>
-                            <p>Docker</p>
-                        </div>
-                        <div data-aos="fade-down-right"
-                            class="icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <svg class="mr-2" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);">
-                                <path
-                                    d="M10.43 3.223c-.83 1.386-.906 1.499-1.21 1.81-.633.654-1.417 1.003-2.415 1.074-.187.013-1.265.033-2.702.05-.638.008-.75.011-.766.028-.01.011-.185.274-.39.586l-.37.565.104.005c.056.003.443-.003.858-.011a93.159 93.163 0 011.335-.019c.572 0 .58 0 .667.03.246.084.393.306.355.533a.504.504 0 01-.394.42c-.104.027-.375.034-2.821.075-.426.007-.78.015-.784.02a30.5 30.5 0 00-.747 1.145c.004.004.405 0 .893-.007 3.13-.051 5.844-.092 6.6-.1.727-.008.995-.02 1.19-.054.54-.092.954-.297 1.31-.65.253-.252.475-.572.852-1.23.125-.217.262-.45.307-.52l.138-.223c.033-.054.07-.11.082-.125.033-.038.1-.146.14-.23.034-.07.534-.906.75-1.257.15-.242.232-.312.42-.355.26-.06.58.102.653.332.06.188.033.305-.136.59-1.21 2.035-1.65 2.764-1.887 3.123-.672 1.018-1.684 1.564-2.991 1.613-.105.003-.773.015-1.486.026l-2.052.031-1.591.027a1166.545 1166.596 0 01-3.102.048c-.502.005-.761.013-.78.022a.723.723 0 00-.12.186 2.87 2.87 0 00-.285.793.427.427 0 01-.039.132c-.024.007-.02.787.003.81a.41.41 0 01.04.135c.057.285.197.616.395.932l.092.147 1.316.008c.724.004 2.597.015 4.164.021 1.692.008 2.914.019 3.01.027.318.026.488.052.75.118a3.374 3.374 0 011.652.95c.255.264.38.44.941 1.339.366.584 1.455 2.363 1.494 2.44.142.28.05.571-.223.7a.588.588 0 01-.518.01c-.145-.072-.152-.08-.9-1.29a85.42 85.42 0 00-.512-.822 26.09 26.091 0 01-.344-.565c-.37-.62-.588-.93-.82-1.162a2.367 2.367 0 00-1.164-.627c-.286-.064-.338-.066-2.328-.077a590.763 590.789 0 00-3.215-.014c-.738 0-1.634-.005-1.99-.008-.517-.008-.647-.007-.647.007 0 .008.156.27.348.578l.348.56.332.003c2.407.019 2.53.02 2.619.037.194.04.309.123.386.28a.35.35 0 01.05.212.43.43 0 01-.143.342.568.568 0 01-.251.142c-.075.022-.142.024-1.214.02-.92-.003-1.134 0-1.126.013.04.072.695 1.125.704 1.135.008.007.592.016 1.508.021 1.23.008 1.527.013 1.673.03 1.105.13 1.942.603 2.573 1.457.117.158.248.366.912 1.44l.466.754h.714c.392 0 .714-.003.714-.007s-.257-.42-.57-.924a493.191 493.213 0 01-1.49-2.407 12.643 12.644 0 00-.274-.43 2.395 2.395 0 00-1.434-.97c-.252-.061-.428-.077-.874-.083-.446-.006-.522-.016-.646-.08a.552.552 0 01-.231-.227c-.033-.065-.037-.088-.037-.211 0-.127.003-.145.037-.208a.557.557 0 01.357-.275c.07-.021.13-.024.52-.024.345 0 .48.005.625.024.937.12 1.64.445 2.224 1.027.276.276.397.443.758 1.042.127.209.412.672.636 1.028l1.05 1.686.644 1.04h.905c.722 0 .905-.005.9-.018a23.922 23.923 0 00-.24-.39c-.46-.737-.493-.796-.513-.943-.027-.206.118-.419.345-.5a.548.548 0 01.6.134c.064.063.414.61.936 1.465l.156.255.178-.009a3.32 3.32 0 001.31-.325c.065-.03.125-.056.134-.059a3.149 3.149 0 001.078-.886 541.326 541.35 0 002.393-3.65c2.484-3.806 2.433-3.724 2.554-4.086a2.682 2.682 0 00-.115-2.016c-.048-.103-.838-1.387-2.263-3.683a536.842 536.866 0 00-2.253-3.617 2.936 2.936 0 00-1.1-.915 3.19 3.191 0 00-.902-.316c-.18-.033-.193-.036-.183-.052.004-.008-.106-.01-.292-.01l-.298.005-.265.44c-.588.98-.643 1.068-.726 1.151a.568.568 0 01-.309.169c-.222.04-.496-.093-.59-.287-.03-.057-.033-.084-.033-.204 0-.187-.009-.167.504-1.01a3.41 3.41 0 00.147-.254c0-.007-.29-.012-.71-.012h-.71l-.019.03a441.636 441.636 0 01-1.829 3.028c-.21.347-.468.776-.57.953-.231.396-.326.54-.49.744a4.123 4.123 0 01-.563.56c-.53.411-1.17.66-1.92.747-.361.042-.884.048-1.072.013a.576.576 0 01-.384-.276c-.033-.065-.037-.083-.037-.21 0-.12.004-.147.034-.21a.542.542 0 01.352-.279c.073-.02.16-.027.515-.037.264-.007.485-.02.578-.033a3.15 3.15 0 00.599-.15c.164-.065.396-.19.532-.288a2.87 2.87 0 00.53-.526c.056-.074.325-.509.599-.966.273-.458.8-1.334 1.171-1.947.37-.614.677-1.124.68-1.135.006-.016-.098-.018-.703-.018h-.708l-.622 1.035zm7.036.536c0 .01.005.02.012.022.005.001.101.149.212.327.506.81.692 1.117.72 1.194.036.1.04.231.008.323a.646.646 0 01-.24.262.543.543 0 01-.657-.088c-.08-.075-.165-.201-.46-.685-.11-.182-.214-.346-.229-.366-.016-.024-.022-.046-.016-.066.01-.031.56-.88.601-.925.027-.03.05-.03.05.003zM16.08 5.896c-.004.007 0 .013.005.016.012.004 1.003 1.593 1.574 2.523.48.778.696 1.127.88 1.413.301.469.413.687.526 1.026.115.342.16.653.147 1.005-.007.24-.03.39-.088.624-.102.4-.325.866-.61 1.278-.09.128-.273.322-.304.322-.01 0-.02.005-.02.012 0 .006-.039.025-.086.04a.633.633 0 01-.39-.012.661.661 0 01-.294-.283c-.032-.067-.034-.087-.029-.19.007-.14.036-.202.231-.503.25-.385.352-.596.424-.885.124-.49.063-.976-.184-1.46-.049-.095-.36-.606-.692-1.138a342.675 342.69 0 01-1.16-1.867c-.308-.496-.569-.918-.584-.938-.014-.021-.024-.045-.02-.054.01-.027.59-.907.62-.938.02-.022.03-.026.043-.016.01.008.015.02.01.026zm3.142.909a.59.59 0 01.26.188c.095.117 1.425 2.23 1.911 3.04.28.462.41.75.5 1.103.062.243.086.431.086.689 0 .343-.037.57-.145.897-.126.382-.217.553-.658 1.236-.16.25-.998 1.548-1.858 2.887l-1.862 2.89c-.163.253-.303.47-.31.485-.008.013-.019.023-.027.02a20.635 20.636 0 01-.625-1.006c0-.009.012-.033.025-.052a8337.117 8337.482 0 013.846-5.967c.205-.318.266-.429.343-.62a1.95 1.95 0 00.15-.84c-.014-.316-.077-.54-.254-.894-.13-.266-.255-.476-.562-.95-.125-.193-.269-.42-.319-.504a76.564 76.567 0 00-.486-.789c-.764-1.226-.755-1.21-.757-1.35 0-.118.04-.212.128-.307a.67.67 0 01.32-.184.633.633 0 01.294.027zm-4.54 1.215l.2.325c1.091 1.747 1.137 1.824 1.247 2.043.461.919.465 1.832.014 2.735-.096.19-.135.255-.767 1.236-.848 1.32-.947 1.47-.974 1.5-.022.022-.025.024-.025.003 0-.012-.533-.881-1.184-1.93a193.219 193.227 0 01-1.184-1.918c0-.007.554-.858 1.233-1.892a612.753 612.78 0 001.314-2.007.706.706 0 01.096-.127c.007 0 .02.014.03.033zm2.437 6.843a.675.675 0 01.277.26.469.469 0 01.041.153c.01.133-.024.21-.264.588a820.264 820.3 0 01-1.25 1.954l-.125.194c-.022.04-.026.042-.048.026a29.746 29.747 0 01-.605-.97c-.012-.03 1.237-1.975 1.327-2.068a.55.55 0 01.446-.182.436.436 0 01.201.045z" />
-                            </svg>
-                            <p>PM2</p>
-                        </div>
-                        <div data-aos="fade-down-right"
-                            class="icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <i class="fa-brands fa-figma mr-2"></i>
-                            <p>Figma</p>
-                        </div>
-                        <div data-aos="fade-down-right"
-                            class="icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <i class="fa-brands fa-linux mr-2"></i>
-                            <p>Linux</p>
-                        </div>
-                        <div data-aos="fade-down-right"
-                            class="icon-tech flex justify-center items-center bg-gray-500 text-white rounded-lg py-1 px-2">
-                            <i class="fa-brands fa-git-alt mr-2"></i>
-                            <p>Git</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="contacto flex justify-center h-screen items-center pt-[2rem] md:pt-[11rem]" id="contactame">
+            <section id="contactame" class="contacto flex justify-center h-screen items-center pt-[2rem] md:pt-[11rem]">
                 <div class="w-full">
                     <h2 class="text-gray-800 text-center text-4xl font-bold pb-5">Contáctame</h2>
                     <div class="w-full flex justify-center">

@@ -173,6 +173,11 @@ section {
     height: 2.5rem;
 }
 
+.hover-img {
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+
 /* FOOTER SECTION */
 
 footer {
